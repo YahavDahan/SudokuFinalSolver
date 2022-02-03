@@ -8,6 +8,11 @@ namespace Sudoku
 {
     class Program
     {
+        /// <summary>
+        /// The function creates a sudoku board from a string
+        /// </summary>
+        /// <param name="strBoard">string that representing the sudoku board</param>
+        /// <returns>Return Board object If a sudoku board can be created from the resulting string, Otherwise NULL is returned</returns>
         public static Board CreateNewBoard(string strBoard)
         {
             Board sudokuBoard = null;
@@ -24,7 +29,8 @@ namespace Sudoku
         }
 
         /// <summary>
-        /// 
+        /// A function that representing one complete sudoku game.
+        /// A sudoku board is absorbed, constructed, solved and finally printed
         /// </summary>
         public static void SudokuGame()
         {
