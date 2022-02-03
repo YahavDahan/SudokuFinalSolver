@@ -50,10 +50,12 @@
   "Sudoku.Logic.HumanTechniques": "Sudoku.Logic.HumanTechniques.yml",
   "Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)": "Sudoku.Logic.HumanTechniques.yml",
   "Sudoku.Logic.HumanTechniques.countChangesInTheBoard": "Sudoku.Logic.HumanTechniques.yml",
+  "Sudoku.Logic.HumanTechniques.isBoardValid": "Sudoku.Logic.HumanTechniques.yml",
   "Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)": "Sudoku.Logic.HumanTechniques.yml",
   "Sudoku.Logic.SudokuBoardSolver": "Sudoku.Logic.SudokuBoardSolver.yml",
   "Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)": "Sudoku.Logic.SudokuBoardSolver.yml",
   "Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)": "Sudoku.Logic.SudokuBoardSolver.yml",
   "Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack": "Sudoku.Logic.SudokuBoardSolver.yml",
+  "Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)": "Sudoku.Logic.SudokuBoardSolver.yml",
   "Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)": "Sudoku.Logic.SudokuBoardSolver.yml"
 }

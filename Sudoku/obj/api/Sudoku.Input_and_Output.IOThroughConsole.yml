@@ -125,7 +125,7 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/IOThroughConsole.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output

@@ -16,6 +16,7 @@ namespace Sudoku.Input_and_Output
             Console.WriteLine("Enter the string that representing the sudoku board: ");
             try
             {
+                Console.SetIn(new System.IO.StreamReader(Console.OpenStandardInput(8192)));
                 strBoard = Console.ReadLine();
             }
             catch (System.OverflowException)

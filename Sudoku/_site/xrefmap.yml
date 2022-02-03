@@ -555,6 +555,12 @@ references:
   commentId: F:Sudoku.Logic.HumanTechniques.countChangesInTheBoard
   fullName: Sudoku.Logic.HumanTechniques.countChangesInTheBoard
   nameWithType: HumanTechniques.countChangesInTheBoard
+- uid: Sudoku.Logic.HumanTechniques.isBoardValid
+  name: isBoardValid
+  href: api/Sudoku.Logic.HumanTechniques.html#Sudoku_Logic_HumanTechniques_isBoardValid
+  commentId: F:Sudoku.Logic.HumanTechniques.isBoardValid
+  fullName: Sudoku.Logic.HumanTechniques.isBoardValid
+  nameWithType: HumanTechniques.isBoardValid
 - uid: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
   name: SolveWithHumanTechniques(Board)
   href: api/Sudoku.Logic.HumanTechniques.html#Sudoku_Logic_HumanTechniques_SolveWithHumanTechniques_Sudoku_Board_
@@ -606,6 +612,19 @@ references:
   commentId: F:Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
   fullName: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
   nameWithType: SudokuBoardSolver.locationsOfBoardchangesStack
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  name: RemoveValuesFromBoard(Board, Int32)
+  href: api/Sudoku.Logic.SudokuBoardSolver.html#Sudoku_Logic_SudokuBoardSolver_RemoveValuesFromBoard_Sudoku_Board_System_Int32_
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board, System.Int32)
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard(Board, Int32)
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
+  name: RemoveValuesFromBoard
+  href: api/Sudoku.Logic.SudokuBoardSolver.html#Sudoku_Logic_SudokuBoardSolver_RemoveValuesFromBoard_
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard
+  isSpec: "True"
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard
 - uid: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
   name: Solver(Board)
   href: api/Sudoku.Logic.SudokuBoardSolver.html#Sudoku_Logic_SudokuBoardSolver_Solver_Sudoku_Board_

@@ -8,6 +8,7 @@ items:
   - Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
   - Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
   - Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+  - Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
   - Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
   langs:
   - csharp
@@ -135,7 +136,7 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CountLegalNumbersInCurrentIndex
     path: Logic/SudokuBoardSolver.cs
-    startLine: 63
+    startLine: 48
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
@@ -176,7 +177,7 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: FindMinimumLocation
     path: Logic/SudokuBoardSolver.cs
-    startLine: 69
+    startLine: 54
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
@@ -189,6 +190,43 @@ items:
       type: System.Int32
     content.vb: Public Shared Function FindMinimumLocation(board As Board) As Integer
   overload: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  id: RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: RemoveValuesFromBoard(Board, Int32)
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard(Board, Int32)
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: RemoveValuesFromBoard
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 80
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static void RemoveValuesFromBoard(Board board, int numberOfValuesToRemove)
+    parameters:
+    - id: board
+      type: Sudoku.Board
+    - id: numberOfValuesToRemove
+      type: System.Int32
+    content.vb: Public Shared Sub RemoveValuesFromBoard(board As Board, numberOfValuesToRemove As Integer)
+  overload: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
   modifiers.csharp:
   - public
   - static
@@ -622,3 +660,8 @@ references:
   name: FindMinimumLocation
   nameWithType: SudokuBoardSolver.FindMinimumLocation
   fullName: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard
+  name: RemoveValuesFromBoard
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard

@@ -7,6 +7,7 @@ items:
   children:
   - Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
   - Sudoku.Logic.HumanTechniques.countChangesInTheBoard
+  - Sudoku.Logic.HumanTechniques.isBoardValid
   - Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
   langs:
   - csharp
@@ -79,6 +80,39 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Sudoku.Logic.HumanTechniques.isBoardValid
+  commentId: F:Sudoku.Logic.HumanTechniques.isBoardValid
+  id: isBoardValid
+  parent: Sudoku.Logic.HumanTechniques
+  langs:
+  - csharp
+  - vb
+  name: isBoardValid
+  nameWithType: HumanTechniques.isBoardValid
+  fullName: Sudoku.Logic.HumanTechniques.isBoardValid
+  type: Field
+  source:
+    remote:
+      path: Sudoku/Logic/HumanTechniques.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: isBoardValid
+    path: Logic/HumanTechniques.cs
+    startLine: 12
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static bool isBoardValid
+    return:
+      type: System.Boolean
+    content.vb: Public Shared isBoardValid As Boolean
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
   commentId: M:Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
   id: SolveWithHumanTechniques(Sudoku.Board)
@@ -97,7 +131,7 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: SolveWithHumanTechniques
     path: Logic/HumanTechniques.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
@@ -134,7 +168,7 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CheckPossibleNumbersInCurrentIndex
     path: Logic/HumanTechniques.cs
-    startLine: 204
+    startLine: 220
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
@@ -462,6 +496,13 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*
   commentId: Overload:Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques
   name: SolveWithHumanTechniques
