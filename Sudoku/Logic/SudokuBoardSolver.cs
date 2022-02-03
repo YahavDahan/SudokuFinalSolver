@@ -28,7 +28,7 @@ namespace Sudoku.Logic
             return isTheSudokuBoardResolved;
         }
 
-        public static bool BacktrackingSolver(Board sudokuBoardToSolve)
+        private static bool BacktrackingSolver(Board sudokuBoardToSolve)
         {
             int locationOfTheCellWithTheMinimumNumberOfLegalOptions = FindMinimumLocation(sudokuBoardToSolve);
             if (locationOfTheCellWithTheMinimumNumberOfLegalOptions == -1)
@@ -60,27 +60,6 @@ namespace Sudoku.Logic
             }
             return false;
         }
-
-        //public static bool BacktrackingSolver(Board sudokuBoardToSolve)
-        //{
-        //    int locationOfTheCellWithTheMinimumNumberOfLegalOptions = FindMinimumLocation(sudokuBoardToSolve);
-        //    if (locationOfTheCellWithTheMinimumNumberOfLegalOptions == -1)
-        //        return true;
-        //    int row = locationOfTheCellWithTheMinimumNumberOfLegalOptions / sudokuBoardToSolve.GetSize();
-        //    int col = locationOfTheCellWithTheMinimumNumberOfLegalOptions % sudokuBoardToSolve.GetSize();
-        //    for (int i = 1; i < sudokuBoardToSolve.GetSize() + 1; i++)
-        //    {
-        //        ulong maskOfTheNumber = HandleBitwise.CreateMaskFromNumber(i);
-        //        if (sudokuBoardToSolve.IsNumberValidInThisLocation(maskOfTheNumber, row, col))
-        //        {
-        //            sudokuBoardToSolve.UpdateValue(i, maskOfTheNumber, row, col);
-        //            if (BacktrackingSolver(sudokuBoardToSolve))
-        //                return true;
-        //            sudokuBoardToSolve.RemoveValue(maskOfTheNumber, row, col);
-        //        }
-        //    }
-        //    return false;
-        //}
 
         public static int CountLegalNumbersInCurrentIndex(Board board, int row, int col)
         {
@@ -114,7 +93,7 @@ namespace Sudoku.Logic
             return locationOfTheCellWithTheMinimumNumberOfLegalOptions;
         }
 
-        public static void RemoveValuesFromBoard(Board board, int numberOfValuesToRemove)
+        private static void RemoveValuesFromBoard(Board board, int numberOfValuesToRemove)
         {
             for (int i = 1; i <= numberOfValuesToRemove; i++)
             {

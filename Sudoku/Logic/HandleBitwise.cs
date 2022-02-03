@@ -8,7 +8,8 @@ namespace Sudoku.Logic
 {
     public static class HandleBitwise
     {
-        public static int[] BitsSetTable256;
+        private static int[] BitsSetTable256;
+        
         static HandleBitwise()
         {
             BitsSetTable256 = new int[256];

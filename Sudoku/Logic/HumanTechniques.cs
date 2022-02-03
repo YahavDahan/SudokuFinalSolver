@@ -24,7 +24,7 @@ namespace Sudoku.Logic
 			return HumanTechniques.countChangesInTheBoard;
 		}
 
-		public static bool NakedSinglesTechnique(Board board)
+		private static bool NakedSinglesTechnique(Board board)
 		{  // מחזיר אמת אם התרחשו שינויים בלוח. אחרת מחזיר שקר. מחזיר שגיאה אם הלוח לא פתיר
 			bool hasBoardChanged = false;
 			for (int row = 0; row < board.GetSize(); row++)
@@ -43,7 +43,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool HiddenSinglesTechnique(Board board)
+		private static bool HiddenSinglesTechnique(Board board)
 		{
 			bool hasBoardChanged = false;
 			for (int row = 0; row < board.GetSize(); row++)
@@ -68,7 +68,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static ulong PossibleNumbersInCurrentBox(Board board, int row, int col)
+		private static ulong PossibleNumbersInCurrentBox(Board board, int row, int col)
 		{
 			int boxNumber = board.GetBoxNumberByRowAndColumn(row, col);
 			ulong resultOfAllThePossibleNumbersInTheCurrentBox = 0;
@@ -79,7 +79,7 @@ namespace Sudoku.Logic
 			return resultOfAllThePossibleNumbersInTheCurrentBox;
 		}
 
-		public static bool NakedPairsTechnique(Board board)
+		private static bool NakedPairsTechnique(Board board)
 		{
 			bool hasBoardChanged = false;
 			bool hasAChangeoccurredInRow = false, hasAChangeoccurredInColumn = false;
@@ -97,7 +97,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool CheckNakedPairsInTheRows(Board board, int rowNum)
+		private static bool CheckNakedPairsInTheRows(Board board, int rowNum)
 		{
 			bool hasBoardChanged = false, hasAChangeoccurredInRow = false, hasAChangeoccurredInBox = false;
 			for (int col = 0; col < board.GetSize(); col++)
@@ -124,7 +124,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool RemoveAllThePairsInTheRow(Board board, ulong maskOfThePair, int rowNum, int theFirstColumnNumberOfThePairInTheRow, int theSecondColumnNumberOfThePairInTheRow)
+		private static bool RemoveAllThePairsInTheRow(Board board, ulong maskOfThePair, int rowNum, int theFirstColumnNumberOfThePairInTheRow, int theSecondColumnNumberOfThePairInTheRow)
 		{
 			bool hasBoardChanged = false;
 			for (int col = 0; col < board.GetSize(); col++)
@@ -134,7 +134,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool CheckNakedPairsInTheColumns(Board board, int colNum)
+		private static bool CheckNakedPairsInTheColumns(Board board, int colNum)
 		{
 			bool hasBoardChanged = false, hasAChangeoccurredInColumn = false, hasAChangeoccurredInBox = false; ;
 			for (int row = 0; row < board.GetSize(); row++)
@@ -161,7 +161,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool RemoveAllThePairsInTheColumn(Board board, ulong maskOfThePair, int colNum, int theFirstRowNumberOfThePairInTheColumn, int theSecondRowNumberOfThePairInTheColumn)
+		private static bool RemoveAllThePairsInTheColumn(Board board, ulong maskOfThePair, int colNum, int theFirstRowNumberOfThePairInTheColumn, int theSecondRowNumberOfThePairInTheColumn)
 		{
 			bool hasBoardChanged = false;
 			for (int row = 0; row < board.GetSize(); row++)
@@ -171,7 +171,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool RemoveAllThePairsInTheBox(Board board, ulong maskOfThePair, int boxNum, int theFirstLocationOfThePairInTheBox, int theSecondLocationOfThePairInTheBox)
+		private static bool RemoveAllThePairsInTheBox(Board board, ulong maskOfThePair, int boxNum, int theFirstLocationOfThePairInTheBox, int theSecondLocationOfThePairInTheBox)
 		{
 			bool hasBoardChanged = false;
 			for (int row = boxNum / board.GetSubSize() * board.GetSubSize(); row < boxNum / board.GetSubSize() * board.GetSubSize() + board.GetSubSize(); row++)
@@ -182,7 +182,7 @@ namespace Sudoku.Logic
 			return hasBoardChanged;
 		}
 
-		public static bool CheckIfCanAddValueInTheBoard(Board board, ulong maskOfThePair, int rowNumber, int columnNumber)
+		private static bool CheckIfCanAddValueInTheBoard(Board board, ulong maskOfThePair, int rowNumber, int columnNumber)
 		{
 			ulong maskOfThePossibleNumbers = CheckPossibleNumbersInCurrentIndex(board, rowNumber, columnNumber) & (maskOfThePair ^ (((ulong)1 << board.GetSize()) - 1));
 			if (HandleBitwise.CountOneBits(maskOfThePossibleNumbers) == 0)
@@ -195,7 +195,7 @@ namespace Sudoku.Logic
 			return false;
 		}
 
-		public static void AddNewValueToTheBoard(Board board, ulong maskOfTheNumberToBeAddedToTheBoard, int row, int col)
+		private static void AddNewValueToTheBoard(Board board, ulong maskOfTheNumberToBeAddedToTheBoard, int row, int col)
 		{
 			board.UpdateValue(HandleBitwise.CreateNumberFromMask(maskOfTheNumberToBeAddedToTheBoard), maskOfTheNumberToBeAddedToTheBoard, row, col);
 			SudokuBoardSolver.locationsOfBoardchangesStack.Push(row * board.GetSize() + col);

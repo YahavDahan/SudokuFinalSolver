@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku.Exceptions
 {
-    class UnsolvableBoardException : Exception
+    public class UnsolvableBoardException : Exception
     {
         public UnsolvableBoardException(string message)
         : base(message) { }
