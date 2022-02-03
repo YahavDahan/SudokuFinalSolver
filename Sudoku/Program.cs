@@ -44,6 +44,7 @@ namespace Sudoku
                 Console.WriteLine("The inserted board is unsolvable \n\n");
         }
 
+        [STAThread]
         static void Main(string[] args)
         {
             // The program begins here.
