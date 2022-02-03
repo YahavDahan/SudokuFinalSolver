@@ -1,0 +1,877 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Board
+  commentId: T:Sudoku.Board
+  id: Board
+  parent: Sudoku
+  children:
+  - Sudoku.Board.#ctor(System.String)
+  - Sudoku.Board.BoardMatrix
+  - Sudoku.Board.BoxesArr
+  - Sudoku.Board.ColsArr
+  - Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+  - Sudoku.Board.GetSize
+  - Sudoku.Board.GetSubSize
+  - Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+  - Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
+  - Sudoku.Board.RowsArr
+  - Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Board
+  nameWithType: Board
+  fullName: Sudoku.Board
+  type: Class
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: Board
+    path: Board.cs
+    startLine: 8
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public class Board
+    content.vb: Public Class Board
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sudoku.Board.#ctor(System.String)
+  commentId: M:Sudoku.Board.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: Board(String)
+  nameWithType: Board.Board(String)
+  fullName: Sudoku.Board.Board(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: .ctor
+    path: Board.cs
+    startLine: 28
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public Board(string strBoard)
+    parameters:
+    - id: strBoard
+      type: System.String
+    content.vb: Public Sub New(strBoard As String)
+  overload: Sudoku.Board.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+  commentId: M:Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+  id: IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: IsNumberValidInThisLocation(UInt64, Int32, Int32)
+  nameWithType: Board.IsNumberValidInThisLocation(UInt64, Int32, Int32)
+  fullName: Sudoku.Board.IsNumberValidInThisLocation(System.UInt64, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: IsNumberValidInThisLocation
+    path: Board.cs
+    startLine: 55
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public bool IsNumberValidInThisLocation(ulong maskOfTheNumberForChecking, int row, int col)
+    parameters:
+    - id: maskOfTheNumberForChecking
+      type: System.UInt64
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsNumberValidInThisLocation(maskOfTheNumberForChecking As ULong, row As Integer, col As Integer) As Boolean
+  overload: Sudoku.Board.IsNumberValidInThisLocation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+  commentId: M:Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+  id: UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: UpdateValue(Int32, UInt64, Int32, Int32)
+  nameWithType: Board.UpdateValue(Int32, UInt64, Int32, Int32)
+  fullName: Sudoku.Board.UpdateValue(System.Int32, System.UInt64, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: UpdateValue
+    path: Board.cs
+    startLine: 66
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public void UpdateValue(int valueForUpdate, ulong maskOfTheValueForUpdate, int row, int col)
+    parameters:
+    - id: valueForUpdate
+      type: System.Int32
+    - id: maskOfTheValueForUpdate
+      type: System.UInt64
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    content.vb: Public Sub UpdateValue(valueForUpdate As Integer, maskOfTheValueForUpdate As ULong, row As Integer, col As Integer)
+  overload: Sudoku.Board.UpdateValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
+  commentId: M:Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
+  id: RemoveValue(System.UInt64,System.Int32,System.Int32)
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: RemoveValue(UInt64, Int32, Int32)
+  nameWithType: Board.RemoveValue(UInt64, Int32, Int32)
+  fullName: Sudoku.Board.RemoveValue(System.UInt64, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: RemoveValue
+    path: Board.cs
+    startLine: 74
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public void RemoveValue(ulong maskOfTheValueToRemove, int row, int col)
+    parameters:
+    - id: maskOfTheValueToRemove
+      type: System.UInt64
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    content.vb: Public Sub RemoveValue(maskOfTheValueToRemove As ULong, row As Integer, col As Integer)
+  overload: Sudoku.Board.RemoveValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.RowsArr
+  commentId: P:Sudoku.Board.RowsArr
+  id: RowsArr
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: RowsArr
+  nameWithType: Board.RowsArr
+  fullName: Sudoku.Board.RowsArr
+  type: Property
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: RowsArr
+    path: Board.cs
+    startLine: 83
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public ulong[] RowsArr { get; set; }
+    parameters: []
+    return:
+      type: System.UInt64[]
+    content.vb: Public Property RowsArr As ULong()
+  overload: Sudoku.Board.RowsArr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.ColsArr
+  commentId: P:Sudoku.Board.ColsArr
+  id: ColsArr
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: ColsArr
+  nameWithType: Board.ColsArr
+  fullName: Sudoku.Board.ColsArr
+  type: Property
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: ColsArr
+    path: Board.cs
+    startLine: 89
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public ulong[] ColsArr { get; set; }
+    parameters: []
+    return:
+      type: System.UInt64[]
+    content.vb: Public Property ColsArr As ULong()
+  overload: Sudoku.Board.ColsArr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.BoxesArr
+  commentId: P:Sudoku.Board.BoxesArr
+  id: BoxesArr
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: BoxesArr
+  nameWithType: Board.BoxesArr
+  fullName: Sudoku.Board.BoxesArr
+  type: Property
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: BoxesArr
+    path: Board.cs
+    startLine: 94
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public ulong[] BoxesArr { get; set; }
+    parameters: []
+    return:
+      type: System.UInt64[]
+    content.vb: Public Property BoxesArr As ULong()
+  overload: Sudoku.Board.BoxesArr*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+  commentId: M:Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+  id: GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: GetBoxNumberByRowAndColumn(Int32, Int32)
+  nameWithType: Board.GetBoxNumberByRowAndColumn(Int32, Int32)
+  fullName: Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: GetBoxNumberByRowAndColumn
+    path: Board.cs
+    startLine: 100
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public int GetBoxNumberByRowAndColumn(int rowNumber, int columnNumber)
+    parameters:
+    - id: rowNumber
+      type: System.Int32
+    - id: columnNumber
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetBoxNumberByRowAndColumn(rowNumber As Integer, columnNumber As Integer) As Integer
+  overload: Sudoku.Board.GetBoxNumberByRowAndColumn*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.BoardMatrix
+  commentId: P:Sudoku.Board.BoardMatrix
+  id: BoardMatrix
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: BoardMatrix
+  nameWithType: Board.BoardMatrix
+  fullName: Sudoku.Board.BoardMatrix
+  type: Property
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: BoardMatrix
+    path: Board.cs
+    startLine: 105
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public int[, ] BoardMatrix { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[,]
+    content.vb: Public Property BoardMatrix As Integer(,)
+  overload: Sudoku.Board.BoardMatrix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.GetSize
+  commentId: M:Sudoku.Board.GetSize
+  id: GetSize
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: GetSize()
+  nameWithType: Board.GetSize()
+  fullName: Sudoku.Board.GetSize()
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: GetSize
+    path: Board.cs
+    startLine: 111
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public int GetSize()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetSize As Integer
+  overload: Sudoku.Board.GetSize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sudoku.Board.GetSubSize
+  commentId: M:Sudoku.Board.GetSubSize
+  id: GetSubSize
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: GetSubSize()
+  nameWithType: Board.GetSubSize()
+  fullName: Sudoku.Board.GetSubSize()
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: GetSubSize
+    path: Board.cs
+    startLine: 116
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public int GetSubSize()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetSubSize As Integer
+  overload: Sudoku.Board.GetSubSize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sudoku
+  commentId: N:Sudoku
+  name: Sudoku
+  nameWithType: Sudoku
+  fullName: Sudoku
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sudoku.Board.#ctor*
+  commentId: Overload:Sudoku.Board.#ctor
+  name: Board
+  nameWithType: Board.Board
+  fullName: Sudoku.Board.Board
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sudoku.Board.IsNumberValidInThisLocation*
+  commentId: Overload:Sudoku.Board.IsNumberValidInThisLocation
+  name: IsNumberValidInThisLocation
+  nameWithType: Board.IsNumberValidInThisLocation
+  fullName: Sudoku.Board.IsNumberValidInThisLocation
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sudoku.Board.UpdateValue*
+  commentId: Overload:Sudoku.Board.UpdateValue
+  name: UpdateValue
+  nameWithType: Board.UpdateValue
+  fullName: Sudoku.Board.UpdateValue
+- uid: Sudoku.Board.RemoveValue*
+  commentId: Overload:Sudoku.Board.RemoveValue
+  name: RemoveValue
+  nameWithType: Board.RemoveValue
+  fullName: Sudoku.Board.RemoveValue
+- uid: Sudoku.Board.RowsArr*
+  commentId: Overload:Sudoku.Board.RowsArr
+  name: RowsArr
+  nameWithType: Board.RowsArr
+  fullName: Sudoku.Board.RowsArr
+- uid: System.UInt64[]
+  isExternal: true
+  name: UInt64[]
+  nameWithType: UInt64[]
+  fullName: System.UInt64[]
+  nameWithType.vb: UInt64()
+  fullName.vb: System.UInt64()
+  name.vb: UInt64()
+  spec.csharp:
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sudoku.Board.ColsArr*
+  commentId: Overload:Sudoku.Board.ColsArr
+  name: ColsArr
+  nameWithType: Board.ColsArr
+  fullName: Sudoku.Board.ColsArr
+- uid: Sudoku.Board.BoxesArr*
+  commentId: Overload:Sudoku.Board.BoxesArr
+  name: BoxesArr
+  nameWithType: Board.BoxesArr
+  fullName: Sudoku.Board.BoxesArr
+- uid: Sudoku.Board.GetBoxNumberByRowAndColumn*
+  commentId: Overload:Sudoku.Board.GetBoxNumberByRowAndColumn
+  name: GetBoxNumberByRowAndColumn
+  nameWithType: Board.GetBoxNumberByRowAndColumn
+  fullName: Sudoku.Board.GetBoxNumberByRowAndColumn
+- uid: Sudoku.Board.BoardMatrix*
+  commentId: Overload:Sudoku.Board.BoardMatrix
+  name: BoardMatrix
+  nameWithType: Board.BoardMatrix
+  fullName: Sudoku.Board.BoardMatrix
+- uid: System.Int32[,]
+  isExternal: true
+  name: Int32[,]
+  nameWithType: Int32[,]
+  fullName: System.Int32[,]
+  nameWithType.vb: Int32(,)
+  fullName.vb: System.Int32(,)
+  name.vb: Int32(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: Sudoku.Board.GetSize*
+  commentId: Overload:Sudoku.Board.GetSize
+  name: GetSize
+  nameWithType: Board.GetSize
+  fullName: Sudoku.Board.GetSize
+- uid: Sudoku.Board.GetSubSize*
+  commentId: Overload:Sudoku.Board.GetSubSize
+  name: GetSubSize
+  nameWithType: Board.GetSubSize
+  fullName: Sudoku.Board.GetSubSize

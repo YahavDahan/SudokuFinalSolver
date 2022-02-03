@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Logic.HandleString
+  commentId: T:Sudoku.Logic.HandleString
+  id: HandleString
+  parent: Sudoku.Logic
+  children:
+  - Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+  - Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+  - Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+  - Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+  langs:
+  - csharp
+  - vb
+  name: HandleString
+  nameWithType: HandleString
+  fullName: Sudoku.Logic.HandleString
+  type: Class
+  source:
+    remote:
+      path: Sudoku/Logic/HandleString.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: HandleString
+    path: Logic/HandleString.cs
+    startLine: 8
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static class HandleString
+    content.vb: Public Module HandleString
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+  commentId: M:Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+  id: ConvertCharToIntegerTypeAsNumber(System.Char)
+  parent: Sudoku.Logic.HandleString
+  langs:
+  - csharp
+  - vb
+  name: ConvertCharToIntegerTypeAsNumber(Char)
+  nameWithType: HandleString.ConvertCharToIntegerTypeAsNumber(Char)
+  fullName: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleString.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: ConvertCharToIntegerTypeAsNumber
+    path: Logic/HandleString.cs
+    startLine: 10
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int ConvertCharToIntegerTypeAsNumber(char tavToConvert)
+    parameters:
+    - id: tavToConvert
+      type: System.Char
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ConvertCharToIntegerTypeAsNumber(tavToConvert As Char) As Integer
+  overload: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+  commentId: M:Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+  id: ConvertIntegerAsNumberToCharType(System.Int32)
+  parent: Sudoku.Logic.HandleString
+  langs:
+  - csharp
+  - vb
+  name: ConvertIntegerAsNumberToCharType(Int32)
+  nameWithType: HandleString.ConvertIntegerAsNumberToCharType(Int32)
+  fullName: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleString.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: ConvertIntegerAsNumberToCharType
+    path: Logic/HandleString.cs
+    startLine: 15
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static char ConvertIntegerAsNumberToCharType(int numberToConvert)
+    parameters:
+    - id: numberToConvert
+      type: System.Int32
+    return:
+      type: System.Char
+    content.vb: Public Shared Function ConvertIntegerAsNumberToCharType(numberToConvert As Integer) As Char
+  overload: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+  commentId: M:Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+  id: IsValidLengthToCreateSudokuBoard(System.String)
+  parent: Sudoku.Logic.HandleString
+  langs:
+  - csharp
+  - vb
+  name: IsValidLengthToCreateSudokuBoard(String)
+  nameWithType: HandleString.IsValidLengthToCreateSudokuBoard(String)
+  fullName: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleString.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: IsValidLengthToCreateSudokuBoard
+    path: Logic/HandleString.cs
+    startLine: 20
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static bool IsValidLengthToCreateSudokuBoard(string strBoard)
+    parameters:
+    - id: strBoard
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsValidLengthToCreateSudokuBoard(strBoard As String) As Boolean
+  overload: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+  commentId: M:Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+  id: AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+  parent: Sudoku.Logic.HandleString
+  langs:
+  - csharp
+  - vb
+  name: AreAllTheCharactersAsciiCodeValid(String, Int32)
+  nameWithType: HandleString.AreAllTheCharactersAsciiCodeValid(String, Int32)
+  fullName: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleString.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: AreAllTheCharactersAsciiCodeValid
+    path: Logic/HandleString.cs
+    startLine: 29
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static bool AreAllTheCharactersAsciiCodeValid(string strBoard, int theNumberOfTheValidCharacters)
+    parameters:
+    - id: strBoard
+      type: System.String
+    - id: theNumberOfTheValidCharacters
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function AreAllTheCharactersAsciiCodeValid(strBoard As String, theNumberOfTheValidCharacters As Integer) As Boolean
+  overload: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sudoku.Logic
+  commentId: N:Sudoku.Logic
+  name: Sudoku.Logic
+  nameWithType: Sudoku.Logic
+  fullName: Sudoku.Logic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
+  commentId: Overload:Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber
+  name: ConvertCharToIntegerTypeAsNumber
+  nameWithType: HandleString.ConvertCharToIntegerTypeAsNumber
+  fullName: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
+  commentId: Overload:Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType
+  name: ConvertIntegerAsNumberToCharType
+  nameWithType: HandleString.ConvertIntegerAsNumberToCharType
+  fullName: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType
+- uid: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
+  commentId: Overload:Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard
+  name: IsValidLengthToCreateSudokuBoard
+  nameWithType: HandleString.IsValidLengthToCreateSudokuBoard
+  fullName: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
+  commentId: Overload:Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid
+  name: AreAllTheCharactersAsciiCodeValid
+  nameWithType: HandleString.AreAllTheCharactersAsciiCodeValid
+  fullName: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid

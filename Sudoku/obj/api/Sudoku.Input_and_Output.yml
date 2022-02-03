@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Input_and_Output
+  commentId: N:Sudoku.Input_and_Output
+  id: Sudoku.Input_and_Output
+  children:
+  - Sudoku.Input_and_Output.IOThroughConsole
+  - Sudoku.Input_and_Output.IOThroughTextFile
+  - Sudoku.Input_and_Output.MainBoardIO
+  langs:
+  - csharp
+  - vb
+  name: Sudoku.Input_and_Output
+  nameWithType: Sudoku.Input_and_Output
+  fullName: Sudoku.Input_and_Output
+  type: Namespace
+  assemblies:
+  - Sudoku
+references:
+- uid: Sudoku.Input_and_Output.IOThroughConsole
+  commentId: T:Sudoku.Input_and_Output.IOThroughConsole
+  name: IOThroughConsole
+  nameWithType: IOThroughConsole
+  fullName: Sudoku.Input_and_Output.IOThroughConsole
+- uid: Sudoku.Input_and_Output.IOThroughTextFile
+  commentId: T:Sudoku.Input_and_Output.IOThroughTextFile
+  name: IOThroughTextFile
+  nameWithType: IOThroughTextFile
+  fullName: Sudoku.Input_and_Output.IOThroughTextFile
+- uid: Sudoku.Input_and_Output.MainBoardIO
+  commentId: T:Sudoku.Input_and_Output.MainBoardIO
+  name: MainBoardIO
+  nameWithType: MainBoardIO
+  fullName: Sudoku.Input_and_Output.MainBoardIO

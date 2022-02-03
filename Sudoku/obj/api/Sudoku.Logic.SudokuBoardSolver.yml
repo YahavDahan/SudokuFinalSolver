@@ -1,0 +1,667 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Logic.SudokuBoardSolver
+  commentId: T:Sudoku.Logic.SudokuBoardSolver
+  id: SudokuBoardSolver
+  parent: Sudoku.Logic
+  children:
+  - Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+  - Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+  - Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+  - Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  - Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+  langs:
+  - csharp
+  - vb
+  name: SudokuBoardSolver
+  nameWithType: SudokuBoardSolver
+  fullName: Sudoku.Logic.SudokuBoardSolver
+  type: Class
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: SudokuBoardSolver
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 8
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static class SudokuBoardSolver
+    content.vb: Public Module SudokuBoardSolver
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+  commentId: F:Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+  id: locationsOfBoardchangesStack
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: locationsOfBoardchangesStack
+  nameWithType: SudokuBoardSolver.locationsOfBoardchangesStack
+  fullName: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+  type: Field
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: locationsOfBoardchangesStack
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 11
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static Stack<int> locationsOfBoardchangesStack
+    return:
+      type: System.Collections.Generic.Stack{System.Int32}
+    content.vb: Public Shared locationsOfBoardchangesStack As Stack(Of Integer)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+  id: Solver(Sudoku.Board)
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: Solver(Board)
+  nameWithType: SudokuBoardSolver.Solver(Board)
+  fullName: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: Solver
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 13
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static bool Solver(Board sudokuBoardToSolve)
+    parameters:
+    - id: sudokuBoardToSolve
+      type: Sudoku.Board
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Solver(sudokuBoardToSolve As Board) As Boolean
+  overload: Sudoku.Logic.SudokuBoardSolver.Solver*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+  id: CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+  nameWithType: SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+  fullName: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: CountLegalNumbersInCurrentIndex
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 48
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int CountLegalNumbersInCurrentIndex(Board board, int row, int col)
+    parameters:
+    - id: board
+      type: Sudoku.Board
+    - id: row
+      type: System.Int32
+    - id: col
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CountLegalNumbersInCurrentIndex(board As Board, row As Integer, col As Integer) As Integer
+  overload: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+  id: FindMinimumLocation(Sudoku.Board)
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: FindMinimumLocation(Board)
+  nameWithType: SudokuBoardSolver.FindMinimumLocation(Board)
+  fullName: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: FindMinimumLocation
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 54
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int FindMinimumLocation(Board board)
+    parameters:
+    - id: board
+      type: Sudoku.Board
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FindMinimumLocation(board As Board) As Integer
+  overload: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  commentId: M:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  id: RemoveValuesFromBoard(Sudoku.Board,System.Int32)
+  parent: Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: RemoveValuesFromBoard(Board, Int32)
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard(Board, Int32)
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard(Sudoku.Board, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/SudokuBoardSolver.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: RemoveValuesFromBoard
+    path: Logic/SudokuBoardSolver.cs
+    startLine: 80
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static void RemoveValuesFromBoard(Board board, int numberOfValuesToRemove)
+    parameters:
+    - id: board
+      type: Sudoku.Board
+    - id: numberOfValuesToRemove
+      type: System.Int32
+    content.vb: Public Shared Sub RemoveValuesFromBoard(board As Board, numberOfValuesToRemove As Integer)
+  overload: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sudoku.Logic
+  commentId: N:Sudoku.Logic
+  name: Sudoku.Logic
+  nameWithType: Sudoku.Logic
+  fullName: Sudoku.Logic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Stack{System.Int32}
+  commentId: T:System.Collections.Generic.Stack{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Stack`1
+  name: Stack<Int32>
+  nameWithType: Stack<Int32>
+  fullName: System.Collections.Generic.Stack<System.Int32>
+  nameWithType.vb: Stack(Of Int32)
+  fullName.vb: System.Collections.Generic.Stack(Of System.Int32)
+  name.vb: Stack(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    nameWithType: Stack
+    fullName: System.Collections.Generic.Stack
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    nameWithType: Stack
+    fullName: System.Collections.Generic.Stack
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Stack`1
+  commentId: T:System.Collections.Generic.Stack`1
+  isExternal: true
+  name: Stack<T>
+  nameWithType: Stack<T>
+  fullName: System.Collections.Generic.Stack<T>
+  nameWithType.vb: Stack(Of T)
+  fullName.vb: System.Collections.Generic.Stack(Of T)
+  name.vb: Stack(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    nameWithType: Stack
+    fullName: System.Collections.Generic.Stack
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Stack`1
+    name: Stack
+    nameWithType: Stack
+    fullName: System.Collections.Generic.Stack
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sudoku.Logic.SudokuBoardSolver.Solver*
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.Solver
+  name: Solver
+  nameWithType: SudokuBoardSolver.Solver
+  fullName: Sudoku.Logic.SudokuBoardSolver.Solver
+- uid: Sudoku.Board
+  commentId: T:Sudoku.Board
+  parent: Sudoku
+  name: Board
+  nameWithType: Board
+  fullName: Sudoku.Board
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sudoku
+  commentId: N:Sudoku
+  name: Sudoku
+  nameWithType: Sudoku
+  fullName: Sudoku
+- uid: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+  name: CountLegalNumbersInCurrentIndex
+  nameWithType: SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+  fullName: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+  name: FindMinimumLocation
+  nameWithType: SudokuBoardSolver.FindMinimumLocation
+  fullName: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+- uid: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
+  commentId: Overload:Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard
+  name: RemoveValuesFromBoard
+  nameWithType: SudokuBoardSolver.RemoveValuesFromBoard
+  fullName: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard

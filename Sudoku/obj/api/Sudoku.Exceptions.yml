@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Exceptions
+  commentId: N:Sudoku.Exceptions
+  id: Sudoku.Exceptions
+  children:
+  - Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  - Sudoku.Exceptions.NumberLocationException
+  - Sudoku.Exceptions.UnsolvableBoardException
+  langs:
+  - csharp
+  - vb
+  name: Sudoku.Exceptions
+  nameWithType: Sudoku.Exceptions
+  fullName: Sudoku.Exceptions
+  type: Namespace
+  assemblies:
+  - Sudoku
+references:
+- uid: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  commentId: T:Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  name: AsciiCharacterOutOfRangeException
+  nameWithType: AsciiCharacterOutOfRangeException
+  fullName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+- uid: Sudoku.Exceptions.NumberLocationException
+  commentId: T:Sudoku.Exceptions.NumberLocationException
+  name: NumberLocationException
+  nameWithType: NumberLocationException
+  fullName: Sudoku.Exceptions.NumberLocationException
+- uid: Sudoku.Exceptions.UnsolvableBoardException
+  commentId: T:Sudoku.Exceptions.UnsolvableBoardException
+  name: UnsolvableBoardException
+  nameWithType: UnsolvableBoardException
+  fullName: Sudoku.Exceptions.UnsolvableBoardException

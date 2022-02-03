@@ -10,18 +10,25 @@ namespace Sudoku.Logic
 	{
 		public static int countChangesInTheBoard = 0;
 
+		public static bool isBoardValid = true;
+
 		public static int SolveWithHumanTechniques(Board boardToSolve)
 		{
 			HumanTechniques.countChangesInTheBoard = 0;
+			HumanTechniques.isBoardValid = true;
 			while (true)
 			{
 				bool nakedSingles = NakedSinglesTechnique(boardToSolve);
 				bool hiddenSingles = HiddenSinglesTechnique(boardToSolve);
 				bool nakedPair = NakedPairsTechnique(boardToSolve);
+				if (!HumanTechniques.isBoardValid)
+				{
+					SudokuBoardSolver.RemoveValuesFromBoard(boardToSolve, countChangesInTheBoard);
+					return -1;
+				}
 				if (!(hiddenSingles || nakedSingles || nakedPair))
-					break;
+					return HumanTechniques.countChangesInTheBoard;
 			}
-			return HumanTechniques.countChangesInTheBoard;
 		}
 
 		private static bool NakedSinglesTechnique(Board board)
@@ -33,7 +40,11 @@ namespace Sudoku.Logic
 					{
 						ulong maskOfThePossibleNumbers = CheckPossibleNumbersInCurrentIndex(board, row, col);
 						if (maskOfThePossibleNumbers == 0)
-							throw new Exceptions.UnsolvableBoardException(String.Format("No value can match the cell at location [{0}, {1}]", row, col));
+						{
+							// throw new Exceptions.UnsolvableBoardException(String.Format("No value can match the cell at location [{0}, {1}]", row, col));
+							HumanTechniques.isBoardValid = false;
+							return hasBoardChanged;
+						}
 						if (HandleBitwise.IsPowerOfTwo(maskOfThePossibleNumbers))
 						{
 							AddNewValueToTheBoard(board, maskOfThePossibleNumbers, row, col);
@@ -62,7 +73,11 @@ namespace Sudoku.Logic
 								hasBoardChanged = true;
 							}
 							else
-								throw new Exceptions.UnsolvableBoardException(String.Format("more then one number must appear in location [{0}, {1}]", row, col));
+							{
+								// throw new Exceptions.UnsolvableBoardException(String.Format("more then one number must appear in location [{0}, {1}]", row, col));
+								HumanTechniques.isBoardValid = false;
+								return hasBoardChanged;
+							}
 						}
 					}
 			return hasBoardChanged;
@@ -186,7 +201,8 @@ namespace Sudoku.Logic
 		{
 			ulong maskOfThePossibleNumbers = CheckPossibleNumbersInCurrentIndex(board, rowNumber, columnNumber) & (maskOfThePair ^ (((ulong)1 << board.GetSize()) - 1));
 			if (HandleBitwise.CountOneBits(maskOfThePossibleNumbers) == 0)
-				throw new Exceptions.UnsolvableBoardException(String.Format("No value can match the cell at location [{0}, {1}]", rowNumber, columnNumber));
+				HumanTechniques.isBoardValid = false;
+				// throw new Exceptions.UnsolvableBoardException(String.Format("No value can match the cell at location [{0}, {1}]", rowNumber, columnNumber));
 			if (HandleBitwise.CountOneBits(maskOfThePossibleNumbers) == 1)
 			{
 				AddNewValueToTheBoard(board, maskOfThePossibleNumbers, rowNumber, columnNumber);

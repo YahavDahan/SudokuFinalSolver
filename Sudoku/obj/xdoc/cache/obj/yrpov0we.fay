@@ -1,0 +1,3941 @@
+id: Sudoku
+language: CSharp
+name:
+  Default: Sudoku
+qualifiedName:
+  Default: Sudoku
+type: Assembly
+modifiers: {}
+items:
+- id: Sudoku
+  commentId: N:Sudoku
+  language: CSharp
+  name:
+    CSharp: Sudoku
+    VB: Sudoku
+  nameWithType:
+    CSharp: Sudoku
+    VB: Sudoku
+  qualifiedName:
+    CSharp: Sudoku
+    VB: Sudoku
+  type: Namespace
+  assemblies:
+  - Sudoku
+  modifiers: {}
+  items:
+  - id: Sudoku.Board
+    commentId: T:Sudoku.Board
+    language: CSharp
+    name:
+      CSharp: Board
+      VB: Board
+    nameWithType:
+      CSharp: Board
+      VB: Board
+    qualifiedName:
+      CSharp: Sudoku.Board
+      VB: Sudoku.Board
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku
+    source:
+      remote:
+        path: Sudoku/Board.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: Board
+      path: Board.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public class Board
+        VB: Public Class Board
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Board.#ctor(System.String)
+      commentId: M:Sudoku.Board.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: Board(String)
+        VB: Board(String)
+      nameWithType:
+        CSharp: Board.Board(String)
+        VB: Board.Board(String)
+      qualifiedName:
+        CSharp: Sudoku.Board.Board(System.String)
+        VB: Sudoku.Board.Board(System.String)
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Board.cs
+        startLine: 28
+      syntax:
+        content:
+          CSharp: public Board(string strBoard)
+          VB: Public Sub New(strBoard As String)
+        parameters:
+        - id: strBoard
+          type: System.String
+      overload: Sudoku.Board.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+      commentId: M:Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: IsNumberValidInThisLocation(UInt64, Int32, Int32)
+        VB: IsNumberValidInThisLocation(UInt64, Int32, Int32)
+      nameWithType:
+        CSharp: Board.IsNumberValidInThisLocation(UInt64, Int32, Int32)
+        VB: Board.IsNumberValidInThisLocation(UInt64, Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Board.IsNumberValidInThisLocation(System.UInt64, System.Int32, System.Int32)
+        VB: Sudoku.Board.IsNumberValidInThisLocation(System.UInt64, System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: IsNumberValidInThisLocation
+        path: Board.cs
+        startLine: 55
+      syntax:
+        content:
+          CSharp: public bool IsNumberValidInThisLocation(ulong maskOfTheNumberForChecking, int row, int col)
+          VB: Public Function IsNumberValidInThisLocation(maskOfTheNumberForChecking As ULong, row As Integer, col As Integer) As Boolean
+        parameters:
+        - id: maskOfTheNumberForChecking
+          type: System.UInt64
+        - id: row
+          type: System.Int32
+        - id: col
+          type: System.Int32
+        return:
+          type: System.Boolean
+      overload: Sudoku.Board.IsNumberValidInThisLocation*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+      commentId: M:Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: UpdateValue(Int32, UInt64, Int32, Int32)
+        VB: UpdateValue(Int32, UInt64, Int32, Int32)
+      nameWithType:
+        CSharp: Board.UpdateValue(Int32, UInt64, Int32, Int32)
+        VB: Board.UpdateValue(Int32, UInt64, Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Board.UpdateValue(System.Int32, System.UInt64, System.Int32, System.Int32)
+        VB: Sudoku.Board.UpdateValue(System.Int32, System.UInt64, System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: UpdateValue
+        path: Board.cs
+        startLine: 66
+      syntax:
+        content:
+          CSharp: public void UpdateValue(int valueForUpdate, ulong maskOfTheValueForUpdate, int row, int col)
+          VB: Public Sub UpdateValue(valueForUpdate As Integer, maskOfTheValueForUpdate As ULong, row As Integer, col As Integer)
+        parameters:
+        - id: valueForUpdate
+          type: System.Int32
+        - id: maskOfTheValueForUpdate
+          type: System.UInt64
+        - id: row
+          type: System.Int32
+        - id: col
+          type: System.Int32
+      overload: Sudoku.Board.UpdateValue*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
+      commentId: M:Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: RemoveValue(UInt64, Int32, Int32)
+        VB: RemoveValue(UInt64, Int32, Int32)
+      nameWithType:
+        CSharp: Board.RemoveValue(UInt64, Int32, Int32)
+        VB: Board.RemoveValue(UInt64, Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Board.RemoveValue(System.UInt64, System.Int32, System.Int32)
+        VB: Sudoku.Board.RemoveValue(System.UInt64, System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: RemoveValue
+        path: Board.cs
+        startLine: 74
+      syntax:
+        content:
+          CSharp: public void RemoveValue(ulong maskOfTheValueToRemove, int row, int col)
+          VB: Public Sub RemoveValue(maskOfTheValueToRemove As ULong, row As Integer, col As Integer)
+        parameters:
+        - id: maskOfTheValueToRemove
+          type: System.UInt64
+        - id: row
+          type: System.Int32
+        - id: col
+          type: System.Int32
+      overload: Sudoku.Board.RemoveValue*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.RowsArr
+      commentId: P:Sudoku.Board.RowsArr
+      language: CSharp
+      name:
+        CSharp: RowsArr
+        VB: RowsArr
+      nameWithType:
+        CSharp: Board.RowsArr
+        VB: Board.RowsArr
+      qualifiedName:
+        CSharp: Sudoku.Board.RowsArr
+        VB: Sudoku.Board.RowsArr
+      type: Property
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: RowsArr
+        path: Board.cs
+        startLine: 83
+      syntax:
+        content:
+          CSharp: public ulong[] RowsArr { get; set; }
+          VB: Public Property RowsArr As ULong()
+        parameters: []
+        return:
+          type: System.UInt64[]
+      overload: Sudoku.Board.RowsArr*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: Sudoku.Board.ColsArr
+      commentId: P:Sudoku.Board.ColsArr
+      language: CSharp
+      name:
+        CSharp: ColsArr
+        VB: ColsArr
+      nameWithType:
+        CSharp: Board.ColsArr
+        VB: Board.ColsArr
+      qualifiedName:
+        CSharp: Sudoku.Board.ColsArr
+        VB: Sudoku.Board.ColsArr
+      type: Property
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: ColsArr
+        path: Board.cs
+        startLine: 89
+      syntax:
+        content:
+          CSharp: public ulong[] ColsArr { get; set; }
+          VB: Public Property ColsArr As ULong()
+        parameters: []
+        return:
+          type: System.UInt64[]
+      overload: Sudoku.Board.ColsArr*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: Sudoku.Board.BoxesArr
+      commentId: P:Sudoku.Board.BoxesArr
+      language: CSharp
+      name:
+        CSharp: BoxesArr
+        VB: BoxesArr
+      nameWithType:
+        CSharp: Board.BoxesArr
+        VB: Board.BoxesArr
+      qualifiedName:
+        CSharp: Sudoku.Board.BoxesArr
+        VB: Sudoku.Board.BoxesArr
+      type: Property
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: BoxesArr
+        path: Board.cs
+        startLine: 94
+      syntax:
+        content:
+          CSharp: public ulong[] BoxesArr { get; set; }
+          VB: Public Property BoxesArr As ULong()
+        parameters: []
+        return:
+          type: System.UInt64[]
+      overload: Sudoku.Board.BoxesArr*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+      commentId: M:Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetBoxNumberByRowAndColumn(Int32, Int32)
+        VB: GetBoxNumberByRowAndColumn(Int32, Int32)
+      nameWithType:
+        CSharp: Board.GetBoxNumberByRowAndColumn(Int32, Int32)
+        VB: Board.GetBoxNumberByRowAndColumn(Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32, System.Int32)
+        VB: Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: GetBoxNumberByRowAndColumn
+        path: Board.cs
+        startLine: 100
+      syntax:
+        content:
+          CSharp: public int GetBoxNumberByRowAndColumn(int rowNumber, int columnNumber)
+          VB: Public Function GetBoxNumberByRowAndColumn(rowNumber As Integer, columnNumber As Integer) As Integer
+        parameters:
+        - id: rowNumber
+          type: System.Int32
+        - id: columnNumber
+          type: System.Int32
+        return:
+          type: System.Int32
+      overload: Sudoku.Board.GetBoxNumberByRowAndColumn*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.BoardMatrix
+      commentId: P:Sudoku.Board.BoardMatrix
+      language: CSharp
+      name:
+        CSharp: BoardMatrix
+        VB: BoardMatrix
+      nameWithType:
+        CSharp: Board.BoardMatrix
+        VB: Board.BoardMatrix
+      qualifiedName:
+        CSharp: Sudoku.Board.BoardMatrix
+        VB: Sudoku.Board.BoardMatrix
+      type: Property
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: BoardMatrix
+        path: Board.cs
+        startLine: 105
+      syntax:
+        content:
+          CSharp: public int[, ] BoardMatrix { get; set; }
+          VB: Public Property BoardMatrix As Integer(,)
+        parameters: []
+        return:
+          type: System.Int32[,]
+      overload: Sudoku.Board.BoardMatrix*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: Sudoku.Board.GetSize
+      commentId: M:Sudoku.Board.GetSize
+      language: CSharp
+      name:
+        CSharp: GetSize()
+        VB: GetSize()
+      nameWithType:
+        CSharp: Board.GetSize()
+        VB: Board.GetSize()
+      qualifiedName:
+        CSharp: Sudoku.Board.GetSize()
+        VB: Sudoku.Board.GetSize()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: GetSize
+        path: Board.cs
+        startLine: 111
+      syntax:
+        content:
+          CSharp: public int GetSize()
+          VB: Public Function GetSize As Integer
+        return:
+          type: System.Int32
+      overload: Sudoku.Board.GetSize*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Board.GetSubSize
+      commentId: M:Sudoku.Board.GetSubSize
+      language: CSharp
+      name:
+        CSharp: GetSubSize()
+        VB: GetSubSize()
+      nameWithType:
+        CSharp: Board.GetSubSize()
+        VB: Board.GetSubSize()
+      qualifiedName:
+        CSharp: Sudoku.Board.GetSubSize()
+        VB: Sudoku.Board.GetSubSize()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku
+      source:
+        remote:
+          path: Sudoku/Board.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: GetSubSize
+        path: Board.cs
+        startLine: 116
+      syntax:
+        content:
+          CSharp: public int GetSubSize()
+          VB: Public Function GetSubSize As Integer
+        return:
+          type: System.Int32
+      overload: Sudoku.Board.GetSubSize*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: Sudoku.Exceptions
+  commentId: N:Sudoku.Exceptions
+  language: CSharp
+  name:
+    CSharp: Sudoku.Exceptions
+    VB: Sudoku.Exceptions
+  nameWithType:
+    CSharp: Sudoku.Exceptions
+    VB: Sudoku.Exceptions
+  qualifiedName:
+    CSharp: Sudoku.Exceptions
+    VB: Sudoku.Exceptions
+  type: Namespace
+  assemblies:
+  - Sudoku
+  modifiers: {}
+  items:
+  - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    commentId: T:Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    language: CSharp
+    name:
+      CSharp: AsciiCharacterOutOfRangeException
+      VB: AsciiCharacterOutOfRangeException
+    nameWithType:
+      CSharp: AsciiCharacterOutOfRangeException
+      VB: AsciiCharacterOutOfRangeException
+    qualifiedName:
+      CSharp: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+      VB: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Exceptions
+    source:
+      remote:
+        path: Sudoku/Exceptions/AsciiCharacterOutOfRangeException.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: AsciiCharacterOutOfRangeException
+      path: Exceptions/AsciiCharacterOutOfRangeException.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class AsciiCharacterOutOfRangeException : Exception, ISerializable, _Exception'
+        VB: >-
+          Public Class AsciiCharacterOutOfRangeException
+
+              Inherits Exception
+
+              Implements ISerializable, _Exception
+    inheritance:
+    - System.Object
+    - System.Exception
+    implements:
+    - System.Runtime.Serialization.ISerializable
+    - System.Runtime.InteropServices._Exception
+    inheritedMembers:
+    - System.Exception.GetBaseException
+    - System.Exception.ToString
+    - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    - System.Exception.GetType
+    - System.Exception.Message
+    - System.Exception.Data
+    - System.Exception.InnerException
+    - System.Exception.TargetSite
+    - System.Exception.StackTrace
+    - System.Exception.HelpLink
+    - System.Exception.Source
+    - System.Exception.HResult
+    - System.Exception.SerializeObjectState
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor(System.String)
+      commentId: M:Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: AsciiCharacterOutOfRangeException(String)
+        VB: AsciiCharacterOutOfRangeException(String)
+      nameWithType:
+        CSharp: AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException(String)
+        VB: AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException(String)
+      qualifiedName:
+        CSharp: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException(System.String)
+        VB: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException(System.String)
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Exceptions
+      source:
+        remote:
+          path: Sudoku/Exceptions/AsciiCharacterOutOfRangeException.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Exceptions/AsciiCharacterOutOfRangeException.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public AsciiCharacterOutOfRangeException(string message)
+          VB: Public Sub New(message As String)
+        parameters:
+        - id: message
+          type: System.String
+      overload: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Sudoku.Exceptions.NumberLocationException
+    commentId: T:Sudoku.Exceptions.NumberLocationException
+    language: CSharp
+    name:
+      CSharp: NumberLocationException
+      VB: NumberLocationException
+    nameWithType:
+      CSharp: NumberLocationException
+      VB: NumberLocationException
+    qualifiedName:
+      CSharp: Sudoku.Exceptions.NumberLocationException
+      VB: Sudoku.Exceptions.NumberLocationException
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Exceptions
+    source:
+      remote:
+        path: Sudoku/Exceptions/NumberLocationException.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: NumberLocationException
+      path: Exceptions/NumberLocationException.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class NumberLocationException : Exception, ISerializable, _Exception'
+        VB: >-
+          Public Class NumberLocationException
+
+              Inherits Exception
+
+              Implements ISerializable, _Exception
+    inheritance:
+    - System.Object
+    - System.Exception
+    implements:
+    - System.Runtime.Serialization.ISerializable
+    - System.Runtime.InteropServices._Exception
+    inheritedMembers:
+    - System.Exception.GetBaseException
+    - System.Exception.ToString
+    - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    - System.Exception.GetType
+    - System.Exception.Message
+    - System.Exception.Data
+    - System.Exception.InnerException
+    - System.Exception.TargetSite
+    - System.Exception.StackTrace
+    - System.Exception.HelpLink
+    - System.Exception.Source
+    - System.Exception.HResult
+    - System.Exception.SerializeObjectState
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Exceptions.NumberLocationException.#ctor(System.String)
+      commentId: M:Sudoku.Exceptions.NumberLocationException.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: NumberLocationException(String)
+        VB: NumberLocationException(String)
+      nameWithType:
+        CSharp: NumberLocationException.NumberLocationException(String)
+        VB: NumberLocationException.NumberLocationException(String)
+      qualifiedName:
+        CSharp: Sudoku.Exceptions.NumberLocationException.NumberLocationException(System.String)
+        VB: Sudoku.Exceptions.NumberLocationException.NumberLocationException(System.String)
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Exceptions
+      source:
+        remote:
+          path: Sudoku/Exceptions/NumberLocationException.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Exceptions/NumberLocationException.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public NumberLocationException(string message)
+          VB: Public Sub New(message As String)
+        parameters:
+        - id: message
+          type: System.String
+      overload: Sudoku.Exceptions.NumberLocationException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Sudoku.Exceptions.UnsolvableBoardException
+    commentId: T:Sudoku.Exceptions.UnsolvableBoardException
+    language: CSharp
+    name:
+      CSharp: UnsolvableBoardException
+      VB: UnsolvableBoardException
+    nameWithType:
+      CSharp: UnsolvableBoardException
+      VB: UnsolvableBoardException
+    qualifiedName:
+      CSharp: Sudoku.Exceptions.UnsolvableBoardException
+      VB: Sudoku.Exceptions.UnsolvableBoardException
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Exceptions
+    source:
+      remote:
+        path: Sudoku/Exceptions/UnsolvableBoardException.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: UnsolvableBoardException
+      path: Exceptions/UnsolvableBoardException.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class UnsolvableBoardException : Exception, ISerializable, _Exception'
+        VB: >-
+          Public Class UnsolvableBoardException
+
+              Inherits Exception
+
+              Implements ISerializable, _Exception
+    inheritance:
+    - System.Object
+    - System.Exception
+    implements:
+    - System.Runtime.Serialization.ISerializable
+    - System.Runtime.InteropServices._Exception
+    inheritedMembers:
+    - System.Exception.GetBaseException
+    - System.Exception.ToString
+    - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    - System.Exception.GetType
+    - System.Exception.Message
+    - System.Exception.Data
+    - System.Exception.InnerException
+    - System.Exception.TargetSite
+    - System.Exception.StackTrace
+    - System.Exception.HelpLink
+    - System.Exception.Source
+    - System.Exception.HResult
+    - System.Exception.SerializeObjectState
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Exceptions.UnsolvableBoardException.#ctor(System.String)
+      commentId: M:Sudoku.Exceptions.UnsolvableBoardException.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: UnsolvableBoardException(String)
+        VB: UnsolvableBoardException(String)
+      nameWithType:
+        CSharp: UnsolvableBoardException.UnsolvableBoardException(String)
+        VB: UnsolvableBoardException.UnsolvableBoardException(String)
+      qualifiedName:
+        CSharp: Sudoku.Exceptions.UnsolvableBoardException.UnsolvableBoardException(System.String)
+        VB: Sudoku.Exceptions.UnsolvableBoardException.UnsolvableBoardException(System.String)
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Exceptions
+      source:
+        remote:
+          path: Sudoku/Exceptions/UnsolvableBoardException.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Exceptions/UnsolvableBoardException.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public UnsolvableBoardException(string message)
+          VB: Public Sub New(message As String)
+        parameters:
+        - id: message
+          type: System.String
+      overload: Sudoku.Exceptions.UnsolvableBoardException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: Sudoku.Input_and_Output
+  commentId: N:Sudoku.Input_and_Output
+  language: CSharp
+  name:
+    CSharp: Sudoku.Input_and_Output
+    VB: Sudoku.Input_and_Output
+  nameWithType:
+    CSharp: Sudoku.Input_and_Output
+    VB: Sudoku.Input_and_Output
+  qualifiedName:
+    CSharp: Sudoku.Input_and_Output
+    VB: Sudoku.Input_and_Output
+  type: Namespace
+  assemblies:
+  - Sudoku
+  modifiers: {}
+  items:
+  - id: Sudoku.Input_and_Output.IOThroughConsole
+    commentId: T:Sudoku.Input_and_Output.IOThroughConsole
+    language: CSharp
+    name:
+      CSharp: IOThroughConsole
+      VB: IOThroughConsole
+    nameWithType:
+      CSharp: IOThroughConsole
+      VB: IOThroughConsole
+    qualifiedName:
+      CSharp: Sudoku.Input_and_Output.IOThroughConsole
+      VB: Sudoku.Input_and_Output.IOThroughConsole
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Input_and_Output
+    source:
+      remote:
+        path: Sudoku/Input_and_Output/IOThroughConsole.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: IOThroughConsole
+      path: Input_and_Output/IOThroughConsole.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public class IOThroughConsole
+        VB: Public Class IOThroughConsole
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Input_and_Output.IOThroughConsole.#ctor
+      commentId: M:Sudoku.Input_and_Output.IOThroughConsole.#ctor
+      language: CSharp
+      name:
+        CSharp: IOThroughConsole()
+        VB: IOThroughConsole()
+      nameWithType:
+        CSharp: IOThroughConsole.IOThroughConsole()
+        VB: IOThroughConsole.IOThroughConsole()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughConsole.IOThroughConsole()
+        VB: Sudoku.Input_and_Output.IOThroughConsole.IOThroughConsole()
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughConsole.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Input_and_Output/IOThroughConsole.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public IOThroughConsole()
+          VB: Public Sub New
+      overload: Sudoku.Input_and_Output.IOThroughConsole.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard
+      commentId: M:Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard
+      language: CSharp
+      name:
+        CSharp: InputSudokuBoard()
+        VB: InputSudokuBoard()
+      nameWithType:
+        CSharp: IOThroughConsole.InputSudokuBoard()
+        VB: IOThroughConsole.InputSudokuBoard()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard()
+        VB: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughConsole.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: InputSudokuBoard
+        path: Input_and_Output/IOThroughConsole.cs
+        startLine: 12
+      syntax:
+        content:
+          CSharp: public string InputSudokuBoard()
+          VB: Public Function InputSudokuBoard As String
+        return:
+          type: System.String
+      overload: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard(Sudoku.Board)
+      commentId: M:Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: OutputSudokuBoard(Board)
+        VB: OutputSudokuBoard(Board)
+      nameWithType:
+        CSharp: IOThroughConsole.OutputSudokuBoard(Board)
+        VB: IOThroughConsole.OutputSudokuBoard(Board)
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard(Sudoku.Board)
+        VB: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughConsole.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: OutputSudokuBoard
+        path: Input_and_Output/IOThroughConsole.cs
+        startLine: 29
+      syntax:
+        content:
+          CSharp: public void OutputSudokuBoard(Board boardToPrint)
+          VB: Public Sub OutputSudokuBoard(boardToPrint As Board)
+        parameters:
+        - id: boardToPrint
+          type: Sudoku.Board
+      overload: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Sudoku.Input_and_Output.IOThroughTextFile
+    commentId: T:Sudoku.Input_and_Output.IOThroughTextFile
+    language: CSharp
+    name:
+      CSharp: IOThroughTextFile
+      VB: IOThroughTextFile
+    nameWithType:
+      CSharp: IOThroughTextFile
+      VB: IOThroughTextFile
+    qualifiedName:
+      CSharp: Sudoku.Input_and_Output.IOThroughTextFile
+      VB: Sudoku.Input_and_Output.IOThroughTextFile
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Input_and_Output
+    source:
+      remote:
+        path: Sudoku/Input_and_Output/IOThroughTextFile.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: IOThroughTextFile
+      path: Input_and_Output/IOThroughTextFile.cs
+      startLine: 10
+    syntax:
+      content:
+        CSharp: public class IOThroughTextFile
+        VB: Public Class IOThroughTextFile
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Input_and_Output.IOThroughTextFile.#ctor
+      commentId: M:Sudoku.Input_and_Output.IOThroughTextFile.#ctor
+      language: CSharp
+      name:
+        CSharp: IOThroughTextFile()
+        VB: IOThroughTextFile()
+      nameWithType:
+        CSharp: IOThroughTextFile.IOThroughTextFile()
+        VB: IOThroughTextFile.IOThroughTextFile()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughTextFile.IOThroughTextFile()
+        VB: Sudoku.Input_and_Output.IOThroughTextFile.IOThroughTextFile()
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughTextFile.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Input_and_Output/IOThroughTextFile.cs
+        startLine: 16
+      syntax:
+        content:
+          CSharp: public IOThroughTextFile()
+          VB: Public Sub New
+      overload: Sudoku.Input_and_Output.IOThroughTextFile.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard
+      commentId: M:Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard
+      language: CSharp
+      name:
+        CSharp: InputSudokuBoard()
+        VB: InputSudokuBoard()
+      nameWithType:
+        CSharp: IOThroughTextFile.InputSudokuBoard()
+        VB: IOThroughTextFile.InputSudokuBoard()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard()
+        VB: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughTextFile.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: InputSudokuBoard
+        path: Input_and_Output/IOThroughTextFile.cs
+        startLine: 32
+      syntax:
+        content:
+          CSharp: public string InputSudokuBoard()
+          VB: Public Function InputSudokuBoard As String
+        return:
+          type: System.String
+      overload: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard(Sudoku.Board)
+      commentId: M:Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: OutputSudokuBoard(Board)
+        VB: OutputSudokuBoard(Board)
+      nameWithType:
+        CSharp: IOThroughTextFile.OutputSudokuBoard(Board)
+        VB: IOThroughTextFile.OutputSudokuBoard(Board)
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard(Sudoku.Board)
+        VB: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/IOThroughTextFile.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: OutputSudokuBoard
+        path: Input_and_Output/IOThroughTextFile.cs
+        startLine: 49
+      syntax:
+        content:
+          CSharp: public void OutputSudokuBoard(Board boardToPrint)
+          VB: Public Sub OutputSudokuBoard(boardToPrint As Board)
+        parameters:
+        - id: boardToPrint
+          type: Sudoku.Board
+      overload: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Sudoku.Input_and_Output.MainBoardIO
+    commentId: T:Sudoku.Input_and_Output.MainBoardIO
+    language: CSharp
+    name:
+      CSharp: MainBoardIO
+      VB: MainBoardIO
+    nameWithType:
+      CSharp: MainBoardIO
+      VB: MainBoardIO
+    qualifiedName:
+      CSharp: Sudoku.Input_and_Output.MainBoardIO
+      VB: Sudoku.Input_and_Output.MainBoardIO
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Input_and_Output
+    source:
+      remote:
+        path: Sudoku/Input_and_Output/MainBoardIO.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: MainBoardIO
+      path: Input_and_Output/MainBoardIO.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public class MainBoardIO
+        VB: Public Class MainBoardIO
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Sudoku.Input_and_Output.MainBoardIO.#ctor
+      commentId: M:Sudoku.Input_and_Output.MainBoardIO.#ctor
+      language: CSharp
+      name:
+        CSharp: MainBoardIO()
+        VB: MainBoardIO()
+      nameWithType:
+        CSharp: MainBoardIO.MainBoardIO()
+        VB: MainBoardIO.MainBoardIO()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.MainBoardIO.MainBoardIO()
+        VB: Sudoku.Input_and_Output.MainBoardIO.MainBoardIO()
+      type: Constructor
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/MainBoardIO.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: .ctor
+        path: Input_and_Output/MainBoardIO.cs
+        startLine: 13
+      syntax:
+        content:
+          CSharp: public MainBoardIO()
+          VB: Public Sub New
+      overload: Sudoku.Input_and_Output.MainBoardIO.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber
+      commentId: M:Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber
+      language: CSharp
+      name:
+        CSharp: InputPossitiveNumber()
+        VB: InputPossitiveNumber()
+      nameWithType:
+        CSharp: MainBoardIO.InputPossitiveNumber()
+        VB: MainBoardIO.InputPossitiveNumber()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber()
+        VB: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/MainBoardIO.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: InputPossitiveNumber
+        path: Input_and_Output/MainBoardIO.cs
+        startLine: 42
+      syntax:
+        content:
+          CSharp: public static int InputPossitiveNumber()
+          VB: Public Shared Function InputPossitiveNumber As Integer
+        return:
+          type: System.Int32
+      overload: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard
+      commentId: M:Sudoku.Input_and_Output.MainBoardIO.InputStringBoard
+      language: CSharp
+      name:
+        CSharp: InputStringBoard()
+        VB: InputStringBoard()
+      nameWithType:
+        CSharp: MainBoardIO.InputStringBoard()
+        VB: MainBoardIO.InputStringBoard()
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard()
+        VB: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard()
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/MainBoardIO.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: InputStringBoard
+        path: Input_and_Output/MainBoardIO.cs
+        startLine: 56
+      syntax:
+        content:
+          CSharp: public string InputStringBoard()
+          VB: Public Function InputStringBoard As String
+        return:
+          type: System.String
+      overload: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard(Sudoku.Board)
+      commentId: M:Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: OutputSudokuBoard(Board)
+        VB: OutputSudokuBoard(Board)
+      nameWithType:
+        CSharp: MainBoardIO.OutputSudokuBoard(Board)
+        VB: MainBoardIO.OutputSudokuBoard(Board)
+      qualifiedName:
+        CSharp: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard(Sudoku.Board)
+        VB: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Input_and_Output
+      source:
+        remote:
+          path: Sudoku/Input_and_Output/MainBoardIO.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: OutputSudokuBoard
+        path: Input_and_Output/MainBoardIO.cs
+        startLine: 61
+      syntax:
+        content:
+          CSharp: public void OutputSudokuBoard(Board boardToPrint)
+          VB: Public Sub OutputSudokuBoard(boardToPrint As Board)
+        parameters:
+        - id: boardToPrint
+          type: Sudoku.Board
+      overload: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: Sudoku.Logic
+  commentId: N:Sudoku.Logic
+  language: CSharp
+  name:
+    CSharp: Sudoku.Logic
+    VB: Sudoku.Logic
+  nameWithType:
+    CSharp: Sudoku.Logic
+    VB: Sudoku.Logic
+  qualifiedName:
+    CSharp: Sudoku.Logic
+    VB: Sudoku.Logic
+  type: Namespace
+  assemblies:
+  - Sudoku
+  modifiers: {}
+  items:
+  - id: Sudoku.Logic.HandleBitwise
+    commentId: T:Sudoku.Logic.HandleBitwise
+    language: CSharp
+    name:
+      CSharp: HandleBitwise
+      VB: HandleBitwise
+    nameWithType:
+      CSharp: HandleBitwise
+      VB: HandleBitwise
+    qualifiedName:
+      CSharp: Sudoku.Logic.HandleBitwise
+      VB: Sudoku.Logic.HandleBitwise
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Logic
+    source:
+      remote:
+        path: Sudoku/Logic/HandleBitwise.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: HandleBitwise
+      path: Logic/HandleBitwise.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public static class HandleBitwise
+        VB: Public Module HandleBitwise
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+      commentId: M:Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+      language: CSharp
+      name:
+        CSharp: CountOneBits(UInt64)
+        VB: CountOneBits(UInt64)
+      nameWithType:
+        CSharp: HandleBitwise.CountOneBits(UInt64)
+        VB: HandleBitwise.CountOneBits(UInt64)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+        VB: Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleBitwise.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: CountOneBits
+        path: Logic/HandleBitwise.cs
+        startLine: 22
+      syntax:
+        content:
+          CSharp: public static int CountOneBits(ulong number)
+          VB: Public Shared Function CountOneBits(number As ULong) As Integer
+        parameters:
+        - id: number
+          type: System.UInt64
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.HandleBitwise.CountOneBits*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+      commentId: M:Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+      language: CSharp
+      name:
+        CSharp: IsPowerOfTwo(UInt64)
+        VB: IsPowerOfTwo(UInt64)
+      nameWithType:
+        CSharp: HandleBitwise.IsPowerOfTwo(UInt64)
+        VB: HandleBitwise.IsPowerOfTwo(UInt64)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+        VB: Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleBitwise.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: IsPowerOfTwo
+        path: Logic/HandleBitwise.cs
+        startLine: 34
+      syntax:
+        content:
+          CSharp: public static bool IsPowerOfTwo(ulong number)
+          VB: Public Shared Function IsPowerOfTwo(number As ULong) As Boolean
+        parameters:
+        - id: number
+          type: System.UInt64
+        return:
+          type: System.Boolean
+      overload: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+      commentId: M:Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+      language: CSharp
+      name:
+        CSharp: CreateMaskFromNumber(Int32)
+        VB: CreateMaskFromNumber(Int32)
+      nameWithType:
+        CSharp: HandleBitwise.CreateMaskFromNumber(Int32)
+        VB: HandleBitwise.CreateMaskFromNumber(Int32)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+        VB: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleBitwise.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: CreateMaskFromNumber
+        path: Logic/HandleBitwise.cs
+        startLine: 39
+      syntax:
+        content:
+          CSharp: public static ulong CreateMaskFromNumber(int numberForCreatingMask)
+          VB: Public Shared Function CreateMaskFromNumber(numberForCreatingMask As Integer) As ULong
+        parameters:
+        - id: numberForCreatingMask
+          type: System.Int32
+        return:
+          type: System.UInt64
+      overload: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+      commentId: M:Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+      language: CSharp
+      name:
+        CSharp: CreateNumberFromMask(UInt64)
+        VB: CreateNumberFromMask(UInt64)
+      nameWithType:
+        CSharp: HandleBitwise.CreateNumberFromMask(UInt64)
+        VB: HandleBitwise.CreateNumberFromMask(UInt64)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+        VB: Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleBitwise.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: CreateNumberFromMask
+        path: Logic/HandleBitwise.cs
+        startLine: 48
+      syntax:
+        content:
+          CSharp: public static int CreateNumberFromMask(ulong maskForCreatingNumber)
+          VB: Public Shared Function CreateNumberFromMask(maskForCreatingNumber As ULong) As Integer
+        parameters:
+        - id: maskForCreatingNumber
+          type: System.UInt64
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+      commentId: M:Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+      language: CSharp
+      name:
+        CSharp: Log2ToNumber(UInt64)
+        VB: Log2ToNumber(UInt64)
+      nameWithType:
+        CSharp: HandleBitwise.Log2ToNumber(UInt64)
+        VB: HandleBitwise.Log2ToNumber(UInt64)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+        VB: Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleBitwise.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: Log2ToNumber
+        path: Logic/HandleBitwise.cs
+        startLine: 53
+      syntax:
+        content:
+          CSharp: public static int Log2ToNumber(ulong number)
+          VB: Public Shared Function Log2ToNumber(number As ULong) As Integer
+        parameters:
+        - id: number
+          type: System.UInt64
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.HandleBitwise.Log2ToNumber*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: Sudoku.Logic.HandleMatrix
+    commentId: T:Sudoku.Logic.HandleMatrix
+    language: CSharp
+    name:
+      CSharp: HandleMatrix
+      VB: HandleMatrix
+    nameWithType:
+      CSharp: HandleMatrix
+      VB: HandleMatrix
+    qualifiedName:
+      CSharp: Sudoku.Logic.HandleMatrix
+      VB: Sudoku.Logic.HandleMatrix
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Logic
+    source:
+      remote:
+        path: Sudoku/Logic/HandleMatrix.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: HandleMatrix
+      path: Logic/HandleMatrix.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public static class HandleMatrix
+        VB: Public Module HandleMatrix
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: Sudoku.Logic.HandleMatrix.IntegerMatrixToString(System.Int32[0:,0:])
+      commentId: M:Sudoku.Logic.HandleMatrix.IntegerMatrixToString(System.Int32[0:,0:])
+      language: CSharp
+      name:
+        CSharp: IntegerMatrixToString(Int32[,])
+        VB: IntegerMatrixToString(Int32(,))
+      nameWithType:
+        CSharp: HandleMatrix.IntegerMatrixToString(Int32[,])
+        VB: HandleMatrix.IntegerMatrixToString(Int32(,))
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleMatrix.IntegerMatrixToString(System.Int32[,])
+        VB: Sudoku.Logic.HandleMatrix.IntegerMatrixToString(System.Int32(,))
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleMatrix.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: IntegerMatrixToString
+        path: Logic/HandleMatrix.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public static string IntegerMatrixToString(int[, ] matrix)
+          VB: Public Shared Function IntegerMatrixToString(matrix As Integer(,)) As String
+        parameters:
+        - id: matrix
+          type: System.Int32[,]
+        return:
+          type: System.String
+      overload: Sudoku.Logic.HandleMatrix.IntegerMatrixToString*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: Sudoku.Logic.HandleString
+    commentId: T:Sudoku.Logic.HandleString
+    language: CSharp
+    name:
+      CSharp: HandleString
+      VB: HandleString
+    nameWithType:
+      CSharp: HandleString
+      VB: HandleString
+    qualifiedName:
+      CSharp: Sudoku.Logic.HandleString
+      VB: Sudoku.Logic.HandleString
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Logic
+    source:
+      remote:
+        path: Sudoku/Logic/HandleString.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: HandleString
+      path: Logic/HandleString.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public static class HandleString
+        VB: Public Module HandleString
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+      commentId: M:Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+      language: CSharp
+      name:
+        CSharp: ConvertCharToIntegerTypeAsNumber(Char)
+        VB: ConvertCharToIntegerTypeAsNumber(Char)
+      nameWithType:
+        CSharp: HandleString.ConvertCharToIntegerTypeAsNumber(Char)
+        VB: HandleString.ConvertCharToIntegerTypeAsNumber(Char)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+        VB: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber(System.Char)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleString.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: ConvertCharToIntegerTypeAsNumber
+        path: Logic/HandleString.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public static int ConvertCharToIntegerTypeAsNumber(char tavToConvert)
+          VB: Public Shared Function ConvertCharToIntegerTypeAsNumber(tavToConvert As Char) As Integer
+        parameters:
+        - id: tavToConvert
+          type: System.Char
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+      commentId: M:Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+      language: CSharp
+      name:
+        CSharp: ConvertIntegerAsNumberToCharType(Int32)
+        VB: ConvertIntegerAsNumberToCharType(Int32)
+      nameWithType:
+        CSharp: HandleString.ConvertIntegerAsNumberToCharType(Int32)
+        VB: HandleString.ConvertIntegerAsNumberToCharType(Int32)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+        VB: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType(System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleString.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: ConvertIntegerAsNumberToCharType
+        path: Logic/HandleString.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: public static char ConvertIntegerAsNumberToCharType(int numberToConvert)
+          VB: Public Shared Function ConvertIntegerAsNumberToCharType(numberToConvert As Integer) As Char
+        parameters:
+        - id: numberToConvert
+          type: System.Int32
+        return:
+          type: System.Char
+      overload: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+      commentId: M:Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+      language: CSharp
+      name:
+        CSharp: IsValidLengthToCreateSudokuBoard(String)
+        VB: IsValidLengthToCreateSudokuBoard(String)
+      nameWithType:
+        CSharp: HandleString.IsValidLengthToCreateSudokuBoard(String)
+        VB: HandleString.IsValidLengthToCreateSudokuBoard(String)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+        VB: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard(System.String)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleString.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: IsValidLengthToCreateSudokuBoard
+        path: Logic/HandleString.cs
+        startLine: 20
+      syntax:
+        content:
+          CSharp: public static bool IsValidLengthToCreateSudokuBoard(string strBoard)
+          VB: Public Shared Function IsValidLengthToCreateSudokuBoard(strBoard As String) As Boolean
+        parameters:
+        - id: strBoard
+          type: System.String
+        return:
+          type: System.Boolean
+      overload: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+      commentId: M:Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String,System.Int32)
+      language: CSharp
+      name:
+        CSharp: AreAllTheCharactersAsciiCodeValid(String, Int32)
+        VB: AreAllTheCharactersAsciiCodeValid(String, Int32)
+      nameWithType:
+        CSharp: HandleString.AreAllTheCharactersAsciiCodeValid(String, Int32)
+        VB: HandleString.AreAllTheCharactersAsciiCodeValid(String, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String, System.Int32)
+        VB: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid(System.String, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HandleString.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: AreAllTheCharactersAsciiCodeValid
+        path: Logic/HandleString.cs
+        startLine: 29
+      syntax:
+        content:
+          CSharp: public static bool AreAllTheCharactersAsciiCodeValid(string strBoard, int theNumberOfTheValidCharacters)
+          VB: Public Shared Function AreAllTheCharactersAsciiCodeValid(strBoard As String, theNumberOfTheValidCharacters As Integer) As Boolean
+        parameters:
+        - id: strBoard
+          type: System.String
+        - id: theNumberOfTheValidCharacters
+          type: System.Int32
+        return:
+          type: System.Boolean
+      overload: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: Sudoku.Logic.HumanTechniques
+    commentId: T:Sudoku.Logic.HumanTechniques
+    language: CSharp
+    name:
+      CSharp: HumanTechniques
+      VB: HumanTechniques
+    nameWithType:
+      CSharp: HumanTechniques
+      VB: HumanTechniques
+    qualifiedName:
+      CSharp: Sudoku.Logic.HumanTechniques
+      VB: Sudoku.Logic.HumanTechniques
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Logic
+    source:
+      remote:
+        path: Sudoku/Logic/HumanTechniques.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: HumanTechniques
+      path: Logic/HumanTechniques.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public static class HumanTechniques
+        VB: Public Module HumanTechniques
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: Sudoku.Logic.HumanTechniques.countChangesInTheBoard
+      commentId: F:Sudoku.Logic.HumanTechniques.countChangesInTheBoard
+      language: CSharp
+      name:
+        CSharp: countChangesInTheBoard
+        VB: countChangesInTheBoard
+      nameWithType:
+        CSharp: HumanTechniques.countChangesInTheBoard
+        VB: HumanTechniques.countChangesInTheBoard
+      qualifiedName:
+        CSharp: Sudoku.Logic.HumanTechniques.countChangesInTheBoard
+        VB: Sudoku.Logic.HumanTechniques.countChangesInTheBoard
+      type: Field
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HumanTechniques.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: countChangesInTheBoard
+        path: Logic/HumanTechniques.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public static int countChangesInTheBoard
+          VB: Public Shared countChangesInTheBoard As Integer
+        return:
+          type: System.Int32
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
+      commentId: M:Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: SolveWithHumanTechniques(Board)
+        VB: SolveWithHumanTechniques(Board)
+      nameWithType:
+        CSharp: HumanTechniques.SolveWithHumanTechniques(Board)
+        VB: HumanTechniques.SolveWithHumanTechniques(Board)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
+        VB: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HumanTechniques.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: SolveWithHumanTechniques
+        path: Logic/HumanTechniques.cs
+        startLine: 12
+      syntax:
+        content:
+          CSharp: public static int SolveWithHumanTechniques(Board boardToSolve)
+          VB: Public Shared Function SolveWithHumanTechniques(boardToSolve As Board) As Integer
+        parameters:
+        - id: boardToSolve
+          type: Sudoku.Board
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+      commentId: M:Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: CheckPossibleNumbersInCurrentIndex(Board, Int32, Int32)
+        VB: CheckPossibleNumbersInCurrentIndex(Board, Int32, Int32)
+      nameWithType:
+        CSharp: HumanTechniques.CheckPossibleNumbersInCurrentIndex(Board, Int32, Int32)
+        VB: HumanTechniques.CheckPossibleNumbersInCurrentIndex(Board, Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board, System.Int32, System.Int32)
+        VB: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex(Sudoku.Board, System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/HumanTechniques.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: CheckPossibleNumbersInCurrentIndex
+        path: Logic/HumanTechniques.cs
+        startLine: 204
+      syntax:
+        content:
+          CSharp: public static ulong CheckPossibleNumbersInCurrentIndex(Board board, int row, int col)
+          VB: Public Shared Function CheckPossibleNumbersInCurrentIndex(board As Board, row As Integer, col As Integer) As ULong
+        parameters:
+        - id: board
+          type: Sudoku.Board
+        - id: row
+          type: System.Int32
+        - id: col
+          type: System.Int32
+        return:
+          type: System.UInt64
+      overload: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+  - id: Sudoku.Logic.SudokuBoardSolver
+    commentId: T:Sudoku.Logic.SudokuBoardSolver
+    language: CSharp
+    name:
+      CSharp: SudokuBoardSolver
+      VB: SudokuBoardSolver
+    nameWithType:
+      CSharp: SudokuBoardSolver
+      VB: SudokuBoardSolver
+    qualifiedName:
+      CSharp: Sudoku.Logic.SudokuBoardSolver
+      VB: Sudoku.Logic.SudokuBoardSolver
+    type: Class
+    assemblies:
+    - Sudoku
+    namespace: Sudoku.Logic
+    source:
+      remote:
+        path: Sudoku/Logic/SudokuBoardSolver.cs
+        branch: ProjectDocumentation
+        repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+      id: SudokuBoardSolver
+      path: Logic/SudokuBoardSolver.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public static class SudokuBoardSolver
+        VB: Public Module SudokuBoardSolver
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - id: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+      commentId: F:Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+      language: CSharp
+      name:
+        CSharp: locationsOfBoardchangesStack
+        VB: locationsOfBoardchangesStack
+      nameWithType:
+        CSharp: SudokuBoardSolver.locationsOfBoardchangesStack
+        VB: SudokuBoardSolver.locationsOfBoardchangesStack
+      qualifiedName:
+        CSharp: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+        VB: Sudoku.Logic.SudokuBoardSolver.locationsOfBoardchangesStack
+      type: Field
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/SudokuBoardSolver.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: locationsOfBoardchangesStack
+        path: Logic/SudokuBoardSolver.cs
+        startLine: 11
+      syntax:
+        content:
+          CSharp: public static Stack<int> locationsOfBoardchangesStack
+          VB: Public Shared locationsOfBoardchangesStack As Stack(Of Integer)
+        return:
+          type: System.Collections.Generic.Stack{System.Int32}
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+      commentId: M:Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: Solver(Board)
+        VB: Solver(Board)
+      nameWithType:
+        CSharp: SudokuBoardSolver.Solver(Board)
+        VB: SudokuBoardSolver.Solver(Board)
+      qualifiedName:
+        CSharp: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+        VB: Sudoku.Logic.SudokuBoardSolver.Solver(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/SudokuBoardSolver.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: Solver
+        path: Logic/SudokuBoardSolver.cs
+        startLine: 13
+      syntax:
+        content:
+          CSharp: public static bool Solver(Board sudokuBoardToSolve)
+          VB: Public Shared Function Solver(sudokuBoardToSolve As Board) As Boolean
+        parameters:
+        - id: sudokuBoardToSolve
+          type: Sudoku.Board
+        return:
+          type: System.Boolean
+      overload: Sudoku.Logic.SudokuBoardSolver.Solver*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+      commentId: M:Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board,System.Int32,System.Int32)
+      language: CSharp
+      name:
+        CSharp: CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+        VB: CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+      nameWithType:
+        CSharp: SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+        VB: SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Board, Int32, Int32)
+      qualifiedName:
+        CSharp: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board, System.Int32, System.Int32)
+        VB: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex(Sudoku.Board, System.Int32, System.Int32)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/SudokuBoardSolver.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: CountLegalNumbersInCurrentIndex
+        path: Logic/SudokuBoardSolver.cs
+        startLine: 63
+      syntax:
+        content:
+          CSharp: public static int CountLegalNumbersInCurrentIndex(Board board, int row, int col)
+          VB: Public Shared Function CountLegalNumbersInCurrentIndex(board As Board, row As Integer, col As Integer) As Integer
+        parameters:
+        - id: board
+          type: Sudoku.Board
+        - id: row
+          type: System.Int32
+        - id: col
+          type: System.Int32
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+    - id: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+      commentId: M:Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+      language: CSharp
+      name:
+        CSharp: FindMinimumLocation(Board)
+        VB: FindMinimumLocation(Board)
+      nameWithType:
+        CSharp: SudokuBoardSolver.FindMinimumLocation(Board)
+        VB: SudokuBoardSolver.FindMinimumLocation(Board)
+      qualifiedName:
+        CSharp: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+        VB: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation(Sudoku.Board)
+      type: Method
+      assemblies:
+      - Sudoku
+      namespace: Sudoku.Logic
+      source:
+        remote:
+          path: Sudoku/Logic/SudokuBoardSolver.cs
+          branch: ProjectDocumentation
+          repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+        id: FindMinimumLocation
+        path: Logic/SudokuBoardSolver.cs
+        startLine: 69
+      syntax:
+        content:
+          CSharp: public static int FindMinimumLocation(Board board)
+          VB: Public Shared Function FindMinimumLocation(board As Board) As Integer
+        parameters:
+        - id: board
+          type: Sudoku.Board
+        return:
+          type: System.Int32
+      overload: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  Sudoku.Board.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.#ctor*
+        name: Board
+        nameWithType: Board.Board
+        qualifiedName: Sudoku.Board.Board
+      VB:
+      - id: Sudoku.Board.#ctor*
+        name: Board
+        nameWithType: Board.Board
+        qualifiedName: Sudoku.Board.Board
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.#ctor
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  System.UInt64:
+    name:
+      CSharp:
+      - id: System.UInt64
+        name: UInt64
+        nameWithType: UInt64
+        qualifiedName: System.UInt64
+        isExternal: true
+      VB:
+      - id: System.UInt64
+        name: UInt64
+        nameWithType: UInt64
+        qualifiedName: System.UInt64
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.UInt64
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  Sudoku.Board.IsNumberValidInThisLocation*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.IsNumberValidInThisLocation*
+        name: IsNumberValidInThisLocation
+        nameWithType: Board.IsNumberValidInThisLocation
+        qualifiedName: Sudoku.Board.IsNumberValidInThisLocation
+      VB:
+      - id: Sudoku.Board.IsNumberValidInThisLocation*
+        name: IsNumberValidInThisLocation
+        nameWithType: Board.IsNumberValidInThisLocation
+        qualifiedName: Sudoku.Board.IsNumberValidInThisLocation
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.IsNumberValidInThisLocation
+  Sudoku.Board.UpdateValue*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.UpdateValue*
+        name: UpdateValue
+        nameWithType: Board.UpdateValue
+        qualifiedName: Sudoku.Board.UpdateValue
+      VB:
+      - id: Sudoku.Board.UpdateValue*
+        name: UpdateValue
+        nameWithType: Board.UpdateValue
+        qualifiedName: Sudoku.Board.UpdateValue
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.UpdateValue
+  Sudoku.Board.RemoveValue*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.RemoveValue*
+        name: RemoveValue
+        nameWithType: Board.RemoveValue
+        qualifiedName: Sudoku.Board.RemoveValue
+      VB:
+      - id: Sudoku.Board.RemoveValue*
+        name: RemoveValue
+        nameWithType: Board.RemoveValue
+        qualifiedName: Sudoku.Board.RemoveValue
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.RemoveValue
+  System.UInt64[]:
+    name:
+      CSharp:
+      - id: System.UInt64
+        name: UInt64
+        nameWithType: UInt64
+        qualifiedName: System.UInt64
+        isExternal: true
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: System.UInt64
+        name: UInt64
+        nameWithType: UInt64
+        qualifiedName: System.UInt64
+        isExternal: true
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  Sudoku.Board.RowsArr*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.RowsArr*
+        name: RowsArr
+        nameWithType: Board.RowsArr
+        qualifiedName: Sudoku.Board.RowsArr
+      VB:
+      - id: Sudoku.Board.RowsArr*
+        name: RowsArr
+        nameWithType: Board.RowsArr
+        qualifiedName: Sudoku.Board.RowsArr
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.RowsArr
+  Sudoku.Board.ColsArr*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.ColsArr*
+        name: ColsArr
+        nameWithType: Board.ColsArr
+        qualifiedName: Sudoku.Board.ColsArr
+      VB:
+      - id: Sudoku.Board.ColsArr*
+        name: ColsArr
+        nameWithType: Board.ColsArr
+        qualifiedName: Sudoku.Board.ColsArr
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.ColsArr
+  Sudoku.Board.BoxesArr*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.BoxesArr*
+        name: BoxesArr
+        nameWithType: Board.BoxesArr
+        qualifiedName: Sudoku.Board.BoxesArr
+      VB:
+      - id: Sudoku.Board.BoxesArr*
+        name: BoxesArr
+        nameWithType: Board.BoxesArr
+        qualifiedName: Sudoku.Board.BoxesArr
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.BoxesArr
+  Sudoku.Board.GetBoxNumberByRowAndColumn*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.GetBoxNumberByRowAndColumn*
+        name: GetBoxNumberByRowAndColumn
+        nameWithType: Board.GetBoxNumberByRowAndColumn
+        qualifiedName: Sudoku.Board.GetBoxNumberByRowAndColumn
+      VB:
+      - id: Sudoku.Board.GetBoxNumberByRowAndColumn*
+        name: GetBoxNumberByRowAndColumn
+        nameWithType: Board.GetBoxNumberByRowAndColumn
+        qualifiedName: Sudoku.Board.GetBoxNumberByRowAndColumn
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.GetBoxNumberByRowAndColumn
+  System.Int32[,]:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: '[,]'
+        nameWithType: '[,]'
+        qualifiedName: '[,]'
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: (,)
+        nameWithType: (,)
+        qualifiedName: (,)
+    isDefinition: false
+  Sudoku.Board.BoardMatrix*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.BoardMatrix*
+        name: BoardMatrix
+        nameWithType: Board.BoardMatrix
+        qualifiedName: Sudoku.Board.BoardMatrix
+      VB:
+      - id: Sudoku.Board.BoardMatrix*
+        name: BoardMatrix
+        nameWithType: Board.BoardMatrix
+        qualifiedName: Sudoku.Board.BoardMatrix
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.BoardMatrix
+  Sudoku.Board.GetSize*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.GetSize*
+        name: GetSize
+        nameWithType: Board.GetSize
+        qualifiedName: Sudoku.Board.GetSize
+      VB:
+      - id: Sudoku.Board.GetSize*
+        name: GetSize
+        nameWithType: Board.GetSize
+        qualifiedName: Sudoku.Board.GetSize
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.GetSize
+  Sudoku.Board.GetSubSize*:
+    name:
+      CSharp:
+      - id: Sudoku.Board.GetSubSize*
+        name: GetSubSize
+        nameWithType: Board.GetSubSize
+        qualifiedName: Sudoku.Board.GetSubSize
+      VB:
+      - id: Sudoku.Board.GetSubSize*
+        name: GetSubSize
+        nameWithType: Board.GetSubSize
+        qualifiedName: Sudoku.Board.GetSubSize
+    isDefinition: true
+    commentId: Overload:Sudoku.Board.GetSubSize
+  Sudoku.Board:
+    name:
+      CSharp:
+      - id: Sudoku.Board
+        name: Board
+        nameWithType: Board
+        qualifiedName: Sudoku.Board
+      VB:
+      - id: Sudoku.Board
+        name: Board
+        nameWithType: Board
+        qualifiedName: Sudoku.Board
+    isDefinition: true
+    parent: Sudoku
+    commentId: T:Sudoku.Board
+  Sudoku:
+    name:
+      CSharp:
+      - name: Sudoku
+        nameWithType: Sudoku
+        qualifiedName: Sudoku
+      VB:
+      - name: Sudoku
+        nameWithType: Sudoku
+        qualifiedName: Sudoku
+    isDefinition: true
+    commentId: N:Sudoku
+  System.Exception:
+    name:
+      CSharp:
+      - id: System.Exception
+        name: Exception
+        nameWithType: Exception
+        qualifiedName: System.Exception
+        isExternal: true
+      VB:
+      - id: System.Exception
+        name: Exception
+        nameWithType: Exception
+        qualifiedName: System.Exception
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Exception
+  System.Exception.GetBaseException:
+    name:
+      CSharp:
+      - id: System.Exception.GetBaseException
+        name: GetBaseException
+        nameWithType: Exception.GetBaseException
+        qualifiedName: System.Exception.GetBaseException
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetBaseException
+        name: GetBaseException
+        nameWithType: Exception.GetBaseException
+        qualifiedName: System.Exception.GetBaseException
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetBaseException
+  System.Exception.ToString:
+    name:
+      CSharp:
+      - id: System.Exception.ToString
+        name: ToString
+        nameWithType: Exception.ToString
+        qualifiedName: System.Exception.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.ToString
+        name: ToString
+        nameWithType: Exception.ToString
+        qualifiedName: System.Exception.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.ToString
+  System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):
+    name:
+      CSharp:
+      - id: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+        name: GetObjectData
+        nameWithType: Exception.GetObjectData
+        qualifiedName: System.Exception.GetObjectData
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Runtime.Serialization.SerializationInfo
+        name: SerializationInfo
+        nameWithType: SerializationInfo
+        qualifiedName: System.Runtime.Serialization.SerializationInfo
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Runtime.Serialization.StreamingContext
+        name: StreamingContext
+        nameWithType: StreamingContext
+        qualifiedName: System.Runtime.Serialization.StreamingContext
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+        name: GetObjectData
+        nameWithType: Exception.GetObjectData
+        qualifiedName: System.Exception.GetObjectData
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Runtime.Serialization.SerializationInfo
+        name: SerializationInfo
+        nameWithType: SerializationInfo
+        qualifiedName: System.Runtime.Serialization.SerializationInfo
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Runtime.Serialization.StreamingContext
+        name: StreamingContext
+        nameWithType: StreamingContext
+        qualifiedName: System.Runtime.Serialization.StreamingContext
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  System.Exception.GetType:
+    name:
+      CSharp:
+      - id: System.Exception.GetType
+        name: GetType
+        nameWithType: Exception.GetType
+        qualifiedName: System.Exception.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetType
+        name: GetType
+        nameWithType: Exception.GetType
+        qualifiedName: System.Exception.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetType
+  System.Exception.Message:
+    name:
+      CSharp:
+      - id: System.Exception.Message
+        name: Message
+        nameWithType: Exception.Message
+        qualifiedName: System.Exception.Message
+        isExternal: true
+      VB:
+      - id: System.Exception.Message
+        name: Message
+        nameWithType: Exception.Message
+        qualifiedName: System.Exception.Message
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Message
+  System.Exception.Data:
+    name:
+      CSharp:
+      - id: System.Exception.Data
+        name: Data
+        nameWithType: Exception.Data
+        qualifiedName: System.Exception.Data
+        isExternal: true
+      VB:
+      - id: System.Exception.Data
+        name: Data
+        nameWithType: Exception.Data
+        qualifiedName: System.Exception.Data
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Data
+  System.Exception.InnerException:
+    name:
+      CSharp:
+      - id: System.Exception.InnerException
+        name: InnerException
+        nameWithType: Exception.InnerException
+        qualifiedName: System.Exception.InnerException
+        isExternal: true
+      VB:
+      - id: System.Exception.InnerException
+        name: InnerException
+        nameWithType: Exception.InnerException
+        qualifiedName: System.Exception.InnerException
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.InnerException
+  System.Exception.TargetSite:
+    name:
+      CSharp:
+      - id: System.Exception.TargetSite
+        name: TargetSite
+        nameWithType: Exception.TargetSite
+        qualifiedName: System.Exception.TargetSite
+        isExternal: true
+      VB:
+      - id: System.Exception.TargetSite
+        name: TargetSite
+        nameWithType: Exception.TargetSite
+        qualifiedName: System.Exception.TargetSite
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.TargetSite
+  System.Exception.StackTrace:
+    name:
+      CSharp:
+      - id: System.Exception.StackTrace
+        name: StackTrace
+        nameWithType: Exception.StackTrace
+        qualifiedName: System.Exception.StackTrace
+        isExternal: true
+      VB:
+      - id: System.Exception.StackTrace
+        name: StackTrace
+        nameWithType: Exception.StackTrace
+        qualifiedName: System.Exception.StackTrace
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.StackTrace
+  System.Exception.HelpLink:
+    name:
+      CSharp:
+      - id: System.Exception.HelpLink
+        name: HelpLink
+        nameWithType: Exception.HelpLink
+        qualifiedName: System.Exception.HelpLink
+        isExternal: true
+      VB:
+      - id: System.Exception.HelpLink
+        name: HelpLink
+        nameWithType: Exception.HelpLink
+        qualifiedName: System.Exception.HelpLink
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.HelpLink
+  System.Exception.Source:
+    name:
+      CSharp:
+      - id: System.Exception.Source
+        name: Source
+        nameWithType: Exception.Source
+        qualifiedName: System.Exception.Source
+        isExternal: true
+      VB:
+      - id: System.Exception.Source
+        name: Source
+        nameWithType: Exception.Source
+        qualifiedName: System.Exception.Source
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Source
+  System.Exception.HResult:
+    name:
+      CSharp:
+      - id: System.Exception.HResult
+        name: HResult
+        nameWithType: Exception.HResult
+        qualifiedName: System.Exception.HResult
+        isExternal: true
+      VB:
+      - id: System.Exception.HResult
+        name: HResult
+        nameWithType: Exception.HResult
+        qualifiedName: System.Exception.HResult
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.HResult
+  System.Exception.SerializeObjectState:
+    name:
+      CSharp:
+      - id: System.Exception.SerializeObjectState
+        name: SerializeObjectState
+        nameWithType: Exception.SerializeObjectState
+        qualifiedName: System.Exception.SerializeObjectState
+        isExternal: true
+      VB:
+      - id: System.Exception.SerializeObjectState
+        name: SerializeObjectState
+        nameWithType: Exception.SerializeObjectState
+        qualifiedName: System.Exception.SerializeObjectState
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: E:System.Exception.SerializeObjectState
+  System.Runtime.Serialization:
+    name:
+      CSharp:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+        isExternal: true
+      VB:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+    isDefinition: true
+    commentId: N:System.Runtime.Serialization
+  System.Runtime.Serialization.ISerializable:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.ISerializable
+        name: ISerializable
+        nameWithType: ISerializable
+        qualifiedName: System.Runtime.Serialization.ISerializable
+        isExternal: true
+      VB:
+      - id: System.Runtime.Serialization.ISerializable
+        name: ISerializable
+        nameWithType: ISerializable
+        qualifiedName: System.Runtime.Serialization.ISerializable
+        isExternal: true
+    isDefinition: true
+    parent: System.Runtime.Serialization
+    commentId: T:System.Runtime.Serialization.ISerializable
+  System.Runtime.InteropServices:
+    name:
+      CSharp:
+      - name: System.Runtime.InteropServices
+        nameWithType: System.Runtime.InteropServices
+        qualifiedName: System.Runtime.InteropServices
+        isExternal: true
+      VB:
+      - name: System.Runtime.InteropServices
+        nameWithType: System.Runtime.InteropServices
+        qualifiedName: System.Runtime.InteropServices
+    isDefinition: true
+    commentId: N:System.Runtime.InteropServices
+  System.Runtime.InteropServices._Exception:
+    name:
+      CSharp:
+      - id: System.Runtime.InteropServices._Exception
+        name: _Exception
+        nameWithType: _Exception
+        qualifiedName: System.Runtime.InteropServices._Exception
+        isExternal: true
+      VB:
+      - id: System.Runtime.InteropServices._Exception
+        name: _Exception
+        nameWithType: _Exception
+        qualifiedName: System.Runtime.InteropServices._Exception
+        isExternal: true
+    isDefinition: true
+    parent: System.Runtime.InteropServices
+    commentId: T:System.Runtime.InteropServices._Exception
+  Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor*
+        name: AsciiCharacterOutOfRangeException
+        nameWithType: AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException
+        qualifiedName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException
+      VB:
+      - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor*
+        name: AsciiCharacterOutOfRangeException
+        nameWithType: AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException
+        qualifiedName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException.AsciiCharacterOutOfRangeException
+    isDefinition: true
+    commentId: Overload:Sudoku.Exceptions.AsciiCharacterOutOfRangeException.#ctor
+  Sudoku.Exceptions.AsciiCharacterOutOfRangeException:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+        name: AsciiCharacterOutOfRangeException
+        nameWithType: AsciiCharacterOutOfRangeException
+        qualifiedName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+      VB:
+      - id: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+        name: AsciiCharacterOutOfRangeException
+        nameWithType: AsciiCharacterOutOfRangeException
+        qualifiedName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    isDefinition: true
+    commentId: T:Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  Sudoku.Exceptions.NumberLocationException.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.NumberLocationException.#ctor*
+        name: NumberLocationException
+        nameWithType: NumberLocationException.NumberLocationException
+        qualifiedName: Sudoku.Exceptions.NumberLocationException.NumberLocationException
+      VB:
+      - id: Sudoku.Exceptions.NumberLocationException.#ctor*
+        name: NumberLocationException
+        nameWithType: NumberLocationException.NumberLocationException
+        qualifiedName: Sudoku.Exceptions.NumberLocationException.NumberLocationException
+    isDefinition: true
+    commentId: Overload:Sudoku.Exceptions.NumberLocationException.#ctor
+  Sudoku.Exceptions.NumberLocationException:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.NumberLocationException
+        name: NumberLocationException
+        nameWithType: NumberLocationException
+        qualifiedName: Sudoku.Exceptions.NumberLocationException
+      VB:
+      - id: Sudoku.Exceptions.NumberLocationException
+        name: NumberLocationException
+        nameWithType: NumberLocationException
+        qualifiedName: Sudoku.Exceptions.NumberLocationException
+    isDefinition: true
+    commentId: T:Sudoku.Exceptions.NumberLocationException
+  Sudoku.Exceptions.UnsolvableBoardException.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.UnsolvableBoardException.#ctor*
+        name: UnsolvableBoardException
+        nameWithType: UnsolvableBoardException.UnsolvableBoardException
+        qualifiedName: Sudoku.Exceptions.UnsolvableBoardException.UnsolvableBoardException
+      VB:
+      - id: Sudoku.Exceptions.UnsolvableBoardException.#ctor*
+        name: UnsolvableBoardException
+        nameWithType: UnsolvableBoardException.UnsolvableBoardException
+        qualifiedName: Sudoku.Exceptions.UnsolvableBoardException.UnsolvableBoardException
+    isDefinition: true
+    commentId: Overload:Sudoku.Exceptions.UnsolvableBoardException.#ctor
+  Sudoku.Exceptions.UnsolvableBoardException:
+    name:
+      CSharp:
+      - id: Sudoku.Exceptions.UnsolvableBoardException
+        name: UnsolvableBoardException
+        nameWithType: UnsolvableBoardException
+        qualifiedName: Sudoku.Exceptions.UnsolvableBoardException
+      VB:
+      - id: Sudoku.Exceptions.UnsolvableBoardException
+        name: UnsolvableBoardException
+        nameWithType: UnsolvableBoardException
+        qualifiedName: Sudoku.Exceptions.UnsolvableBoardException
+    isDefinition: true
+    commentId: T:Sudoku.Exceptions.UnsolvableBoardException
+  Sudoku.Exceptions:
+    name:
+      CSharp:
+      - name: Sudoku.Exceptions
+        nameWithType: Sudoku.Exceptions
+        qualifiedName: Sudoku.Exceptions
+      VB:
+      - name: Sudoku.Exceptions
+        nameWithType: Sudoku.Exceptions
+        qualifiedName: Sudoku.Exceptions
+    isDefinition: true
+    commentId: N:Sudoku.Exceptions
+  Sudoku.Input_and_Output.IOThroughConsole.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.#ctor*
+        name: IOThroughConsole
+        nameWithType: IOThroughConsole.IOThroughConsole
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.IOThroughConsole
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.#ctor*
+        name: IOThroughConsole
+        nameWithType: IOThroughConsole.IOThroughConsole
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.IOThroughConsole
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughConsole.#ctor
+  Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard*
+        name: InputSudokuBoard
+        nameWithType: IOThroughConsole.InputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard*
+        name: InputSudokuBoard
+        nameWithType: IOThroughConsole.InputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard
+  Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: IOThroughConsole.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: IOThroughConsole.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard
+  Sudoku.Input_and_Output.IOThroughConsole:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughConsole
+        name: IOThroughConsole
+        nameWithType: IOThroughConsole
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughConsole
+        name: IOThroughConsole
+        nameWithType: IOThroughConsole
+        qualifiedName: Sudoku.Input_and_Output.IOThroughConsole
+    isDefinition: true
+    commentId: T:Sudoku.Input_and_Output.IOThroughConsole
+  Sudoku.Input_and_Output.IOThroughTextFile.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.#ctor*
+        name: IOThroughTextFile
+        nameWithType: IOThroughTextFile.IOThroughTextFile
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.IOThroughTextFile
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.#ctor*
+        name: IOThroughTextFile
+        nameWithType: IOThroughTextFile.IOThroughTextFile
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.IOThroughTextFile
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughTextFile.#ctor
+  Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard*
+        name: InputSudokuBoard
+        nameWithType: IOThroughTextFile.InputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard*
+        name: InputSudokuBoard
+        nameWithType: IOThroughTextFile.InputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard
+  Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: IOThroughTextFile.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: IOThroughTextFile.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard
+  Sudoku.Input_and_Output.IOThroughTextFile:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile
+        name: IOThroughTextFile
+        nameWithType: IOThroughTextFile
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile
+      VB:
+      - id: Sudoku.Input_and_Output.IOThroughTextFile
+        name: IOThroughTextFile
+        nameWithType: IOThroughTextFile
+        qualifiedName: Sudoku.Input_and_Output.IOThroughTextFile
+    isDefinition: true
+    commentId: T:Sudoku.Input_and_Output.IOThroughTextFile
+  Sudoku.Input_and_Output.MainBoardIO.#ctor*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.MainBoardIO.#ctor*
+        name: MainBoardIO
+        nameWithType: MainBoardIO.MainBoardIO
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.MainBoardIO
+      VB:
+      - id: Sudoku.Input_and_Output.MainBoardIO.#ctor*
+        name: MainBoardIO
+        nameWithType: MainBoardIO.MainBoardIO
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.MainBoardIO
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.MainBoardIO.#ctor
+  Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber*
+        name: InputPossitiveNumber
+        nameWithType: MainBoardIO.InputPossitiveNumber
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber
+      VB:
+      - id: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber*
+        name: InputPossitiveNumber
+        nameWithType: MainBoardIO.InputPossitiveNumber
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber
+  Sudoku.Input_and_Output.MainBoardIO.InputStringBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard*
+        name: InputStringBoard
+        nameWithType: MainBoardIO.InputStringBoard
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard
+      VB:
+      - id: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard*
+        name: InputStringBoard
+        nameWithType: MainBoardIO.InputStringBoard
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.MainBoardIO.InputStringBoard
+  Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: MainBoardIO.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard
+      VB:
+      - id: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard*
+        name: OutputSudokuBoard
+        nameWithType: MainBoardIO.OutputSudokuBoard
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard
+  Sudoku.Input_and_Output.MainBoardIO:
+    name:
+      CSharp:
+      - id: Sudoku.Input_and_Output.MainBoardIO
+        name: MainBoardIO
+        nameWithType: MainBoardIO
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO
+      VB:
+      - id: Sudoku.Input_and_Output.MainBoardIO
+        name: MainBoardIO
+        nameWithType: MainBoardIO
+        qualifiedName: Sudoku.Input_and_Output.MainBoardIO
+    isDefinition: true
+    commentId: T:Sudoku.Input_and_Output.MainBoardIO
+  Sudoku.Input_and_Output:
+    name:
+      CSharp:
+      - name: Sudoku.Input_and_Output
+        nameWithType: Sudoku.Input_and_Output
+        qualifiedName: Sudoku.Input_and_Output
+      VB:
+      - name: Sudoku.Input_and_Output
+        nameWithType: Sudoku.Input_and_Output
+        qualifiedName: Sudoku.Input_and_Output
+    isDefinition: true
+    commentId: N:Sudoku.Input_and_Output
+  Sudoku.Logic.HandleBitwise.CountOneBits*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise.CountOneBits*
+        name: CountOneBits
+        nameWithType: HandleBitwise.CountOneBits
+        qualifiedName: Sudoku.Logic.HandleBitwise.CountOneBits
+      VB:
+      - id: Sudoku.Logic.HandleBitwise.CountOneBits*
+        name: CountOneBits
+        nameWithType: HandleBitwise.CountOneBits
+        qualifiedName: Sudoku.Logic.HandleBitwise.CountOneBits
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleBitwise.CountOneBits
+  Sudoku.Logic.HandleBitwise.IsPowerOfTwo*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
+        name: IsPowerOfTwo
+        nameWithType: HandleBitwise.IsPowerOfTwo
+        qualifiedName: Sudoku.Logic.HandleBitwise.IsPowerOfTwo
+      VB:
+      - id: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
+        name: IsPowerOfTwo
+        nameWithType: HandleBitwise.IsPowerOfTwo
+        qualifiedName: Sudoku.Logic.HandleBitwise.IsPowerOfTwo
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleBitwise.IsPowerOfTwo
+  Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
+        name: CreateMaskFromNumber
+        nameWithType: HandleBitwise.CreateMaskFromNumber
+        qualifiedName: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber
+      VB:
+      - id: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
+        name: CreateMaskFromNumber
+        nameWithType: HandleBitwise.CreateMaskFromNumber
+        qualifiedName: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleBitwise.CreateMaskFromNumber
+  Sudoku.Logic.HandleBitwise.CreateNumberFromMask*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
+        name: CreateNumberFromMask
+        nameWithType: HandleBitwise.CreateNumberFromMask
+        qualifiedName: Sudoku.Logic.HandleBitwise.CreateNumberFromMask
+      VB:
+      - id: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
+        name: CreateNumberFromMask
+        nameWithType: HandleBitwise.CreateNumberFromMask
+        qualifiedName: Sudoku.Logic.HandleBitwise.CreateNumberFromMask
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleBitwise.CreateNumberFromMask
+  Sudoku.Logic.HandleBitwise.Log2ToNumber*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise.Log2ToNumber*
+        name: Log2ToNumber
+        nameWithType: HandleBitwise.Log2ToNumber
+        qualifiedName: Sudoku.Logic.HandleBitwise.Log2ToNumber
+      VB:
+      - id: Sudoku.Logic.HandleBitwise.Log2ToNumber*
+        name: Log2ToNumber
+        nameWithType: HandleBitwise.Log2ToNumber
+        qualifiedName: Sudoku.Logic.HandleBitwise.Log2ToNumber
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleBitwise.Log2ToNumber
+  Sudoku.Logic.HandleBitwise:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleBitwise
+        name: HandleBitwise
+        nameWithType: HandleBitwise
+        qualifiedName: Sudoku.Logic.HandleBitwise
+      VB:
+      - id: Sudoku.Logic.HandleBitwise
+        name: HandleBitwise
+        nameWithType: HandleBitwise
+        qualifiedName: Sudoku.Logic.HandleBitwise
+    isDefinition: true
+    commentId: T:Sudoku.Logic.HandleBitwise
+  Sudoku.Logic.HandleMatrix.IntegerMatrixToString*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleMatrix.IntegerMatrixToString*
+        name: IntegerMatrixToString
+        nameWithType: HandleMatrix.IntegerMatrixToString
+        qualifiedName: Sudoku.Logic.HandleMatrix.IntegerMatrixToString
+      VB:
+      - id: Sudoku.Logic.HandleMatrix.IntegerMatrixToString*
+        name: IntegerMatrixToString
+        nameWithType: HandleMatrix.IntegerMatrixToString
+        qualifiedName: Sudoku.Logic.HandleMatrix.IntegerMatrixToString
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleMatrix.IntegerMatrixToString
+  Sudoku.Logic.HandleMatrix:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleMatrix
+        name: HandleMatrix
+        nameWithType: HandleMatrix
+        qualifiedName: Sudoku.Logic.HandleMatrix
+      VB:
+      - id: Sudoku.Logic.HandleMatrix
+        name: HandleMatrix
+        nameWithType: HandleMatrix
+        qualifiedName: Sudoku.Logic.HandleMatrix
+    isDefinition: true
+    commentId: T:Sudoku.Logic.HandleMatrix
+  System.Char:
+    name:
+      CSharp:
+      - id: System.Char
+        name: Char
+        nameWithType: Char
+        qualifiedName: System.Char
+        isExternal: true
+      VB:
+      - id: System.Char
+        name: Char
+        nameWithType: Char
+        qualifiedName: System.Char
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Char
+  Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
+        name: ConvertCharToIntegerTypeAsNumber
+        nameWithType: HandleString.ConvertCharToIntegerTypeAsNumber
+        qualifiedName: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber
+      VB:
+      - id: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
+        name: ConvertCharToIntegerTypeAsNumber
+        nameWithType: HandleString.ConvertCharToIntegerTypeAsNumber
+        qualifiedName: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber
+  Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
+        name: ConvertIntegerAsNumberToCharType
+        nameWithType: HandleString.ConvertIntegerAsNumberToCharType
+        qualifiedName: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType
+      VB:
+      - id: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
+        name: ConvertIntegerAsNumberToCharType
+        nameWithType: HandleString.ConvertIntegerAsNumberToCharType
+        qualifiedName: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType
+  Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
+        name: IsValidLengthToCreateSudokuBoard
+        nameWithType: HandleString.IsValidLengthToCreateSudokuBoard
+        qualifiedName: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard
+      VB:
+      - id: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
+        name: IsValidLengthToCreateSudokuBoard
+        nameWithType: HandleString.IsValidLengthToCreateSudokuBoard
+        qualifiedName: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard
+  Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
+        name: AreAllTheCharactersAsciiCodeValid
+        nameWithType: HandleString.AreAllTheCharactersAsciiCodeValid
+        qualifiedName: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid
+      VB:
+      - id: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
+        name: AreAllTheCharactersAsciiCodeValid
+        nameWithType: HandleString.AreAllTheCharactersAsciiCodeValid
+        qualifiedName: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid
+  Sudoku.Logic.HandleString:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HandleString
+        name: HandleString
+        nameWithType: HandleString
+        qualifiedName: Sudoku.Logic.HandleString
+      VB:
+      - id: Sudoku.Logic.HandleString
+        name: HandleString
+        nameWithType: HandleString
+        qualifiedName: Sudoku.Logic.HandleString
+    isDefinition: true
+    commentId: T:Sudoku.Logic.HandleString
+  Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*
+        name: SolveWithHumanTechniques
+        nameWithType: HumanTechniques.SolveWithHumanTechniques
+        qualifiedName: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques
+      VB:
+      - id: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*
+        name: SolveWithHumanTechniques
+        nameWithType: HumanTechniques.SolveWithHumanTechniques
+        qualifiedName: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques
+  Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex*
+        name: CheckPossibleNumbersInCurrentIndex
+        nameWithType: HumanTechniques.CheckPossibleNumbersInCurrentIndex
+        qualifiedName: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex
+      VB:
+      - id: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex*
+        name: CheckPossibleNumbersInCurrentIndex
+        nameWithType: HumanTechniques.CheckPossibleNumbersInCurrentIndex
+        qualifiedName: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex
+  Sudoku.Logic.HumanTechniques:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.HumanTechniques
+        name: HumanTechniques
+        nameWithType: HumanTechniques
+        qualifiedName: Sudoku.Logic.HumanTechniques
+      VB:
+      - id: Sudoku.Logic.HumanTechniques
+        name: HumanTechniques
+        nameWithType: HumanTechniques
+        qualifiedName: Sudoku.Logic.HumanTechniques
+    isDefinition: true
+    commentId: T:Sudoku.Logic.HumanTechniques
+  System.Collections.Generic.Stack`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.Stack`1
+        name: Stack
+        nameWithType: Stack
+        qualifiedName: System.Collections.Generic.Stack
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.Stack`1
+        name: Stack
+        nameWithType: Stack
+        qualifiedName: System.Collections.Generic.Stack
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.Stack`1
+  System.Collections.Generic:
+    name:
+      CSharp:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+        isExternal: true
+      VB:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+    isDefinition: true
+    commentId: N:System.Collections.Generic
+  System.Collections.Generic.Stack{System.Int32}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.Stack`1
+        name: Stack
+        nameWithType: Stack
+        qualifiedName: System.Collections.Generic.Stack
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.Stack`1
+        name: Stack
+        nameWithType: Stack
+        qualifiedName: System.Collections.Generic.Stack
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.Stack`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.Stack{System.Int32}
+  Sudoku.Logic.SudokuBoardSolver.Solver*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.SudokuBoardSolver.Solver*
+        name: Solver
+        nameWithType: SudokuBoardSolver.Solver
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.Solver
+      VB:
+      - id: Sudoku.Logic.SudokuBoardSolver.Solver*
+        name: Solver
+        nameWithType: SudokuBoardSolver.Solver
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.Solver
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.SudokuBoardSolver.Solver
+  Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
+        name: CountLegalNumbersInCurrentIndex
+        nameWithType: SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+      VB:
+      - id: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
+        name: CountLegalNumbersInCurrentIndex
+        nameWithType: SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex
+  Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+        name: FindMinimumLocation
+        nameWithType: SudokuBoardSolver.FindMinimumLocation
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+      VB:
+      - id: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
+        name: FindMinimumLocation
+        nameWithType: SudokuBoardSolver.FindMinimumLocation
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+    isDefinition: true
+    commentId: Overload:Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation
+  Sudoku.Logic.SudokuBoardSolver:
+    name:
+      CSharp:
+      - id: Sudoku.Logic.SudokuBoardSolver
+        name: SudokuBoardSolver
+        nameWithType: SudokuBoardSolver
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver
+      VB:
+      - id: Sudoku.Logic.SudokuBoardSolver
+        name: SudokuBoardSolver
+        nameWithType: SudokuBoardSolver
+        qualifiedName: Sudoku.Logic.SudokuBoardSolver
+    isDefinition: true
+    commentId: T:Sudoku.Logic.SudokuBoardSolver
+  Sudoku.Logic:
+    name:
+      CSharp:
+      - name: Sudoku.Logic
+        nameWithType: Sudoku.Logic
+        qualifiedName: Sudoku.Logic
+      VB:
+      - name: Sudoku.Logic
+        nameWithType: Sudoku.Logic
+        qualifiedName: Sudoku.Logic
+    isDefinition: true
+    commentId: N:Sudoku.Logic

@@ -23,6 +23,9 @@ namespace Sudoku
             return sudokuBoard;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void SudokuGame()
         {
             Board sudokuBoard;
@@ -44,11 +47,14 @@ namespace Sudoku
                 Console.WriteLine("The inserted board is unsolvable \n\n");
         }
 
+        /// <summary>
+        /// The program begins here.
+        /// An endless call is made to a function that represents a single sudoku game
+        /// </summary>
+        /// <param name="args"></param>
         [STAThread]
         static void Main(string[] args)
         {
-            // The program begins here.
-            // An endless call is made to a function that represents a single sudoku game
             while (true)
                 SudokuGame();
         }

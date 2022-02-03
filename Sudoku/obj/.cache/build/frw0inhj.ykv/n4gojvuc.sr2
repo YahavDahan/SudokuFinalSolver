@@ -1,0 +1,83 @@
+﻿
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Sudoku.html" name="" title="Sudoku">Sudoku</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Sudoku.Board.html" name="" title="Board">Board</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Sudoku.Exceptions.html" name="" title="Sudoku.Exceptions">Sudoku.Exceptions</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Sudoku.Exceptions.AsciiCharacterOutOfRangeException.html" name="" title="AsciiCharacterOutOfRangeException">AsciiCharacterOutOfRangeException</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Exceptions.NumberLocationException.html" name="" title="NumberLocationException">NumberLocationException</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Exceptions.UnsolvableBoardException.html" name="" title="UnsolvableBoardException">UnsolvableBoardException</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Sudoku.Input_and_Output.html" name="" title="Sudoku.Input_and_Output">Sudoku.Input_and_Output</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Sudoku.Input_and_Output.IOThroughConsole.html" name="" title="IOThroughConsole">IOThroughConsole</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Input_and_Output.IOThroughTextFile.html" name="" title="IOThroughTextFile">IOThroughTextFile</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Input_and_Output.MainBoardIO.html" name="" title="MainBoardIO">MainBoardIO</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Sudoku.Logic.html" name="" title="Sudoku.Logic">Sudoku.Logic</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Sudoku.Logic.HandleBitwise.html" name="" title="HandleBitwise">HandleBitwise</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Logic.HandleMatrix.html" name="" title="HandleMatrix">HandleMatrix</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Logic.HandleString.html" name="" title="HandleString">HandleString</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Logic.HumanTechniques.html" name="" title="HumanTechniques">HumanTechniques</a>
+                          </li>
+                          <li>
+                              <a href="Sudoku.Logic.SudokuBoardSolver.html" name="" title="SudokuBoardSolver">SudokuBoardSolver</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
