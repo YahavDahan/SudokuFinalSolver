@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleMatrix.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HandleMatrix
     path: Logic/HandleMatrix.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleMatrix.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IntegerMatrixToString
     path: Logic/HandleMatrix.cs

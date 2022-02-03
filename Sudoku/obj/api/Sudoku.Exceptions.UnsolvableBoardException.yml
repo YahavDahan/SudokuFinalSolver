@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/UnsolvableBoardException.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: UnsolvableBoardException
     path: Exceptions/UnsolvableBoardException.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/UnsolvableBoardException.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Exceptions/UnsolvableBoardException.cs

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HandleBitwise
     path: Logic/HandleBitwise.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CountOneBits
     path: Logic/HandleBitwise.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IsPowerOfTwo
     path: Logic/HandleBitwise.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CreateMaskFromNumber
     path: Logic/HandleBitwise.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CreateNumberFromMask
     path: Logic/HandleBitwise.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HandleBitwise.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: Log2ToNumber
     path: Logic/HandleBitwise.cs

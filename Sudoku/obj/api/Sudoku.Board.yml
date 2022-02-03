@@ -26,14 +26,16 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: Board
     path: Board.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nA class that representing an object of a sudoku board\n"
+  example: []
   syntax:
     content: public class Board
     content.vb: Public Class Board
@@ -67,21 +69,34 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Board.cs
-    startLine: 28
+    startLine: 56
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nCreates the board object and initializes the board properties dynamically according to the board string obtained as a parameter.\n"
+  example: []
   syntax:
     content: public Board(string strBoard)
     parameters:
     - id: strBoard
       type: System.String
+      description: string that representing the sudoku board
     content.vb: Public Sub New(strBoard As String)
   overload: Sudoku.Board.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: thrown when the length of the string parameter is incorrect for creating a sudoku board
+  - type: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    commentId: T:Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    description: thrown when one of the characters is invalid for creating a board
+  - type: Sudoku.Exceptions.NumberLocationException
+    commentId: T:Sudoku.Exceptions.NumberLocationException
+    description: thrown when the character in particular location of the string is invalid in this location
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -100,25 +115,31 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IsNumberValidInThisLocation
     path: Board.cs
-    startLine: 55
+    startLine: 90
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nThe function checks if number in particular location is valid in this location\n"
+  example: []
   syntax:
     content: public bool IsNumberValidInThisLocation(ulong maskOfTheNumberForChecking, int row, int col)
     parameters:
     - id: maskOfTheNumberForChecking
       type: System.UInt64
+      description: mask that representing the number we want to check if valid in this location. for example, if the number is 5, his mask will be 10000
     - id: row
       type: System.Int32
+      description: The row where we want to check the validation
     - id: col
       type: System.Int32
+      description: The column where we want to check the validation
     return:
       type: System.Boolean
+      description: the function returns true if the number is valid in this location, otherwise returns false
     content.vb: Public Function IsNumberValidInThisLocation(maskOfTheNumberForChecking As ULong, row As Integer, col As Integer) As Boolean
   overload: Sudoku.Board.IsNumberValidInThisLocation*
   modifiers.csharp:
@@ -139,25 +160,31 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: UpdateValue
     path: Board.cs
-    startLine: 66
+    startLine: 108
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nThe function updates a value at a particular location in the board\n"
+  example: []
   syntax:
     content: public void UpdateValue(int valueForUpdate, ulong maskOfTheValueForUpdate, int row, int col)
     parameters:
     - id: valueForUpdate
       type: System.Int32
+      description: the new number we want to append to the board
     - id: maskOfTheValueForUpdate
       type: System.UInt64
+      description: the mask of the number we want to add to the board. for example, if the number is 7, the mask will be 1000000
     - id: row
       type: System.Int32
+      description: The row to which we want to add the number
     - id: col
       type: System.Int32
+      description: The column to which we want to add the number
     content.vb: Public Sub UpdateValue(valueForUpdate As Integer, maskOfTheValueForUpdate As ULong, row As Integer, col As Integer)
   overload: Sudoku.Board.UpdateValue*
   modifiers.csharp:
@@ -178,23 +205,28 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: RemoveValue
     path: Board.cs
-    startLine: 74
+    startLine: 122
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nThe function removes a value at a particular location in the board\n"
+  example: []
   syntax:
     content: public void RemoveValue(ulong maskOfTheValueToRemove, int row, int col)
     parameters:
     - id: maskOfTheValueToRemove
       type: System.UInt64
+      description: the mask of the number we want to remove from the board. for example, if the number we want to remove is 5, the mask will be 10000
     - id: row
       type: System.Int32
+      description: The row where we want to remove the number
     - id: col
       type: System.Int32
+      description: The column where we want to remove the number
     content.vb: Public Sub RemoveValue(maskOfTheValueToRemove As ULong, row As Integer, col As Integer)
   overload: Sudoku.Board.RemoveValue*
   modifiers.csharp:
@@ -215,19 +247,21 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: RowsArr
     path: Board.cs
-    startLine: 83
+    startLine: 132
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public ulong[] RowsArr { get; set; }
     parameters: []
     return:
       type: System.UInt64[]
+      description: Property <code>RowsArr</code> represents the rows bitboard array
     content.vb: Public Property RowsArr As ULong()
   overload: Sudoku.Board.RowsArr*
   modifiers.csharp:
@@ -250,19 +284,21 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: ColsArr
     path: Board.cs
-    startLine: 89
+    startLine: 139
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public ulong[] ColsArr { get; set; }
     parameters: []
     return:
       type: System.UInt64[]
+      description: Property <code>ColsArr</code> represents the columns bitboard array
     content.vb: Public Property ColsArr As ULong()
   overload: Sudoku.Board.ColsArr*
   modifiers.csharp:
@@ -285,19 +321,21 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: BoxesArr
     path: Board.cs
-    startLine: 94
+    startLine: 146
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public ulong[] BoxesArr { get; set; }
     parameters: []
     return:
       type: System.UInt64[]
+      description: Property <code>BoxesArr</code> represents the Boxes bitboard array
     content.vb: Public Property BoxesArr As ULong()
   overload: Sudoku.Board.BoxesArr*
   modifiers.csharp:
@@ -320,23 +358,28 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: GetBoxNumberByRowAndColumn
     path: Board.cs
-    startLine: 100
+    startLine: 158
   assemblies:
   - Sudoku
   namespace: Sudoku
+  summary: "\nthe function finds the box number of any location on the board\n"
+  example: []
   syntax:
     content: public int GetBoxNumberByRowAndColumn(int rowNumber, int columnNumber)
     parameters:
     - id: rowNumber
       type: System.Int32
+      description: The row where we want to find the box number
     - id: columnNumber
       type: System.Int32
+      description: The column where we want to find the box number
     return:
       type: System.Int32
+      description: returns the position of the box in the board
     content.vb: Public Function GetBoxNumberByRowAndColumn(rowNumber As Integer, columnNumber As Integer) As Integer
   overload: Sudoku.Board.GetBoxNumberByRowAndColumn*
   modifiers.csharp:
@@ -357,19 +400,21 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: BoardMatrix
     path: Board.cs
-    startLine: 105
+    startLine: 164
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public int[, ] BoardMatrix { get; set; }
     parameters: []
     return:
       type: System.Int32[,]
+      description: Property <code>BoardMatrix</code> represents the integer board matrix
     content.vb: Public Property BoardMatrix As Integer(,)
   overload: Sudoku.Board.BoardMatrix*
   modifiers.csharp:
@@ -392,18 +437,20 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: GetSize
     path: Board.cs
-    startLine: 111
+    startLine: 171
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public int GetSize()
     return:
       type: System.Int32
+      description: the size of the board (the number of rows in the board)
     content.vb: Public Function GetSize As Integer
   overload: Sudoku.Board.GetSize*
   modifiers.csharp:
@@ -424,18 +471,20 @@ items:
   source:
     remote:
       path: Sudoku/Board.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: GetSubSize
     path: Board.cs
-    startLine: 116
+    startLine: 177
   assemblies:
   - Sudoku
   namespace: Sudoku
+  example: []
   syntax:
     content: public int GetSubSize()
     return:
       type: System.Int32
+      description: the subsize of the board - number of boxes in row (the square root of the number of rows in the board)
     content.vb: Public Function GetSubSize As Integer
   overload: Sudoku.Board.GetSubSize*
   modifiers.csharp:
@@ -740,6 +789,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+- uid: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  commentId: T:Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+  name: AsciiCharacterOutOfRangeException
+  nameWithType: AsciiCharacterOutOfRangeException
+  fullName: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+- uid: Sudoku.Exceptions.NumberLocationException
+  commentId: T:Sudoku.Exceptions.NumberLocationException
+  name: NumberLocationException
+  nameWithType: NumberLocationException
+  fullName: Sudoku.Exceptions.NumberLocationException
 - uid: Sudoku.Board.#ctor*
   commentId: Overload:Sudoku.Board.#ctor
   name: Board

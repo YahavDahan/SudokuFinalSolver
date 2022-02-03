@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/AsciiCharacterOutOfRangeException.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: AsciiCharacterOutOfRangeException
     path: Exceptions/AsciiCharacterOutOfRangeException.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/AsciiCharacterOutOfRangeException.cs
-      branch: ProjectDocumentation
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Exceptions/AsciiCharacterOutOfRangeException.cs
