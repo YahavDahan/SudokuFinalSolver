@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Logic.HandleBitwise
+  commentId: T:Sudoku.Logic.HandleBitwise
+  id: HandleBitwise
+  parent: Sudoku.Logic
+  children:
+  - Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+  - Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+  - Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+  - Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+  - Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+  langs:
+  - csharp
+  - vb
+  name: HandleBitwise
+  nameWithType: HandleBitwise
+  fullName: Sudoku.Logic.HandleBitwise
+  type: Class
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: HandleBitwise
+    path: Logic/HandleBitwise.cs
+    startLine: 8
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static class HandleBitwise
+    content.vb: Public Module HandleBitwise
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+  commentId: M:Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+  id: CountOneBits(System.UInt64)
+  parent: Sudoku.Logic.HandleBitwise
+  langs:
+  - csharp
+  - vb
+  name: CountOneBits(UInt64)
+  nameWithType: HandleBitwise.CountOneBits(UInt64)
+  fullName: Sudoku.Logic.HandleBitwise.CountOneBits(System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: CountOneBits
+    path: Logic/HandleBitwise.cs
+    startLine: 22
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int CountOneBits(ulong number)
+    parameters:
+    - id: number
+      type: System.UInt64
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CountOneBits(number As ULong) As Integer
+  overload: Sudoku.Logic.HandleBitwise.CountOneBits*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+  commentId: M:Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+  id: IsPowerOfTwo(System.UInt64)
+  parent: Sudoku.Logic.HandleBitwise
+  langs:
+  - csharp
+  - vb
+  name: IsPowerOfTwo(UInt64)
+  nameWithType: HandleBitwise.IsPowerOfTwo(UInt64)
+  fullName: Sudoku.Logic.HandleBitwise.IsPowerOfTwo(System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: IsPowerOfTwo
+    path: Logic/HandleBitwise.cs
+    startLine: 34
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static bool IsPowerOfTwo(ulong number)
+    parameters:
+    - id: number
+      type: System.UInt64
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPowerOfTwo(number As ULong) As Boolean
+  overload: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+  commentId: M:Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+  id: CreateMaskFromNumber(System.Int32)
+  parent: Sudoku.Logic.HandleBitwise
+  langs:
+  - csharp
+  - vb
+  name: CreateMaskFromNumber(Int32)
+  nameWithType: HandleBitwise.CreateMaskFromNumber(Int32)
+  fullName: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: CreateMaskFromNumber
+    path: Logic/HandleBitwise.cs
+    startLine: 39
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static ulong CreateMaskFromNumber(int numberForCreatingMask)
+    parameters:
+    - id: numberForCreatingMask
+      type: System.Int32
+    return:
+      type: System.UInt64
+    content.vb: Public Shared Function CreateMaskFromNumber(numberForCreatingMask As Integer) As ULong
+  overload: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+  commentId: M:Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+  id: CreateNumberFromMask(System.UInt64)
+  parent: Sudoku.Logic.HandleBitwise
+  langs:
+  - csharp
+  - vb
+  name: CreateNumberFromMask(UInt64)
+  nameWithType: HandleBitwise.CreateNumberFromMask(UInt64)
+  fullName: Sudoku.Logic.HandleBitwise.CreateNumberFromMask(System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: CreateNumberFromMask
+    path: Logic/HandleBitwise.cs
+    startLine: 48
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int CreateNumberFromMask(ulong maskForCreatingNumber)
+    parameters:
+    - id: maskForCreatingNumber
+      type: System.UInt64
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function CreateNumberFromMask(maskForCreatingNumber As ULong) As Integer
+  overload: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+  commentId: M:Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+  id: Log2ToNumber(System.UInt64)
+  parent: Sudoku.Logic.HandleBitwise
+  langs:
+  - csharp
+  - vb
+  name: Log2ToNumber(UInt64)
+  nameWithType: HandleBitwise.Log2ToNumber(UInt64)
+  fullName: Sudoku.Logic.HandleBitwise.Log2ToNumber(System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Logic/HandleBitwise.cs
+      branch: ProjectDocumentation
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: Log2ToNumber
+    path: Logic/HandleBitwise.cs
+    startLine: 53
+  assemblies:
+  - Sudoku
+  namespace: Sudoku.Logic
+  syntax:
+    content: public static int Log2ToNumber(ulong number)
+    parameters:
+    - id: number
+      type: System.UInt64
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Log2ToNumber(number As ULong) As Integer
+  overload: Sudoku.Logic.HandleBitwise.Log2ToNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sudoku.Logic
+  commentId: N:Sudoku.Logic
+  name: Sudoku.Logic
+  nameWithType: Sudoku.Logic
+  fullName: Sudoku.Logic
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sudoku.Logic.HandleBitwise.CountOneBits*
+  commentId: Overload:Sudoku.Logic.HandleBitwise.CountOneBits
+  name: CountOneBits
+  nameWithType: HandleBitwise.CountOneBits
+  fullName: Sudoku.Logic.HandleBitwise.CountOneBits
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
+  commentId: Overload:Sudoku.Logic.HandleBitwise.IsPowerOfTwo
+  name: IsPowerOfTwo
+  nameWithType: HandleBitwise.IsPowerOfTwo
+  fullName: Sudoku.Logic.HandleBitwise.IsPowerOfTwo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
+  commentId: Overload:Sudoku.Logic.HandleBitwise.CreateMaskFromNumber
+  name: CreateMaskFromNumber
+  nameWithType: HandleBitwise.CreateMaskFromNumber
+  fullName: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber
+- uid: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
+  commentId: Overload:Sudoku.Logic.HandleBitwise.CreateNumberFromMask
+  name: CreateNumberFromMask
+  nameWithType: HandleBitwise.CreateNumberFromMask
+  fullName: Sudoku.Logic.HandleBitwise.CreateNumberFromMask
+- uid: Sudoku.Logic.HandleBitwise.Log2ToNumber*
+  commentId: Overload:Sudoku.Logic.HandleBitwise.Log2ToNumber
+  name: Log2ToNumber
+  nameWithType: HandleBitwise.Log2ToNumber
+  fullName: Sudoku.Logic.HandleBitwise.Log2ToNumber

@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku.Logic
+  commentId: N:Sudoku.Logic
+  id: Sudoku.Logic
+  children:
+  - Sudoku.Logic.HandleBitwise
+  - Sudoku.Logic.HandleMatrix
+  - Sudoku.Logic.HandleString
+  - Sudoku.Logic.HumanTechniques
+  - Sudoku.Logic.SudokuBoardSolver
+  langs:
+  - csharp
+  - vb
+  name: Sudoku.Logic
+  nameWithType: Sudoku.Logic
+  fullName: Sudoku.Logic
+  type: Namespace
+  assemblies:
+  - Sudoku
+references:
+- uid: Sudoku.Logic.HandleBitwise
+  commentId: T:Sudoku.Logic.HandleBitwise
+  name: HandleBitwise
+  nameWithType: HandleBitwise
+  fullName: Sudoku.Logic.HandleBitwise
+- uid: Sudoku.Logic.HandleMatrix
+  commentId: T:Sudoku.Logic.HandleMatrix
+  name: HandleMatrix
+  nameWithType: HandleMatrix
+  fullName: Sudoku.Logic.HandleMatrix
+- uid: Sudoku.Logic.HandleString
+  commentId: T:Sudoku.Logic.HandleString
+  name: HandleString
+  nameWithType: HandleString
+  fullName: Sudoku.Logic.HandleString
+- uid: Sudoku.Logic.HumanTechniques
+  commentId: T:Sudoku.Logic.HumanTechniques
+  name: HumanTechniques
+  nameWithType: HumanTechniques
+  fullName: Sudoku.Logic.HumanTechniques
+- uid: Sudoku.Logic.SudokuBoardSolver
+  commentId: T:Sudoku.Logic.SudokuBoardSolver
+  name: SudokuBoardSolver
+  nameWithType: SudokuBoardSolver
+  fullName: Sudoku.Logic.SudokuBoardSolver

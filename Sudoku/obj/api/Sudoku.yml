@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sudoku
+  commentId: N:Sudoku
+  id: Sudoku
+  children:
+  - Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: Sudoku
+  nameWithType: Sudoku
+  fullName: Sudoku
+  type: Namespace
+  assemblies:
+  - Sudoku
+references:
+- uid: Sudoku.Board
+  commentId: T:Sudoku.Board
+  parent: Sudoku
+  name: Board
+  nameWithType: Board
+  fullName: Sudoku.Board
+- uid: Sudoku
+  commentId: N:Sudoku
+  name: Sudoku
+  nameWithType: Sudoku
+  fullName: Sudoku

@@ -1,0 +1,320 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Sudoku/Sudoku",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "0ZW8NSrkER/3cEBP/0+1D8Tx1J8rcaPTVvZrLLTyqcA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "YxdwWPiu1pBqTB4ZtTI/SUP2w0ncw7ROEfoLgipYcKM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "E+Eek4dssTIQOI7jCNhQ5T1WKrsRZtPVvujQUnSLQ3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Board.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Board.html",
+          "hash": "gvSUAkAQES6Dn9RXGtd26Sv9XMJlejlp1SD/QjGjTNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Exceptions.AsciiCharacterOutOfRangeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Exceptions.AsciiCharacterOutOfRangeException.html",
+          "hash": "+iigkhPDv7txRHsY0gc7s4N5824YU5kx3y5hPhVra+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Exceptions.NumberLocationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Exceptions.NumberLocationException.html",
+          "hash": "YN2L/DRZcfFMMsx3AvQ08jYe61+AuVnNEw4tXC4qfOk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Exceptions.UnsolvableBoardException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Exceptions.UnsolvableBoardException.html",
+          "hash": "dzK0AE6qmVfV79KEWvbRTxI1v0Z9NDI958njLLYoVIE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Exceptions.html",
+          "hash": "lxRwMTx5cQKW/+rJLYhMHTSKYjpM3iWTddyAak7JoTM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Input_and_Output.IOThroughConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Input_and_Output.IOThroughConsole.html",
+          "hash": "4M0pADOGiUJ4JFVK3W+4j6a8CJjhqdJbVrvHZ/rgogU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Input_and_Output.IOThroughTextFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Input_and_Output.IOThroughTextFile.html",
+          "hash": "2ridZB6/AmOLZHd5K+9DlxO3/bKIwAc8DoErWPrmGoY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Input_and_Output.MainBoardIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Input_and_Output.MainBoardIO.html",
+          "hash": "EcoxhnNOqLlRbDciACAyVD0gMHVpS0hxFse3isWPbrM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Input_and_Output.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Input_and_Output.html",
+          "hash": "0BKL2sI1PCFDdpKddDixTFbUIK/4q77N71zH/yzYGeE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.HandleBitwise.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.HandleBitwise.html",
+          "hash": "Qw/e2SRdrrw5AkLtyvL1SpIOWPPSP63ff/GbJf8fLh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.HandleMatrix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.HandleMatrix.html",
+          "hash": "JFNGO7ZxH7h53mtq96BB7sgvdGkl7tusgBXBc2sFXEk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.HandleString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.HandleString.html",
+          "hash": "Bf5Z2iBn+zc1bbe2m3a0MVkqBjPRvvCN7JqFqN8JXeM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.HumanTechniques.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.HumanTechniques.html",
+          "hash": "2fahIVRnB8jUsfiGovlYZ3b9MLT/Mdr0VJPPceYAdM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.SudokuBoardSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.SudokuBoardSolver.html",
+          "hash": "6GozJnmJx0N86BNvFYv9OnpKpq/4LdkrlYdmd2KXce0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.Logic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.Logic.html",
+          "hash": "iGGqemIhmTf7G8luEbVd0Xi/9y6XBjy2gCM6fZpgYMY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Sudoku.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sudoku.html",
+          "hash": "Gb6FCRKjQKIYfLUwJ5cJtzizrMwVmoyTtRhsHfwMDN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "AklJEpJehr/FbSQj73ZojVHCu5Y5NLJpCfXM+c2gMRk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 16,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

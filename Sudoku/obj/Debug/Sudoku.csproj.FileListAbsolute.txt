@@ -5,3 +5,10 @@ C:\Users\yahav\OneDrive\שולחן העבודה\כיתה יג 14\צבא\c#\Sudok
 C:\Users\yahav\OneDrive\שולחן העבודה\כיתה יג 14\צבא\c#\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.CoreCompileInputs.cache
 C:\Users\yahav\OneDrive\שולחן העבודה\כיתה יג 14\צבא\c#\Sudoku\Sudoku\obj\Debug\Sudoku.exe
 C:\Users\yahav\OneDrive\שולחן העבודה\כיתה יג 14\צבא\c#\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
+C:\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+C:\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+C:\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+C:\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.AssemblyReference.cache
+C:\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.CoreCompileInputs.cache
+C:\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+C:\Sudoku\Sudoku\obj\Debug\Sudoku.pdb

@@ -1,0 +1,37 @@
+### YamlMime:TableOfContent
+- uid: Sudoku
+  name: Sudoku
+  items:
+  - uid: Sudoku.Board
+    name: Board
+- uid: Sudoku.Exceptions
+  name: Sudoku.Exceptions
+  items:
+  - uid: Sudoku.Exceptions.AsciiCharacterOutOfRangeException
+    name: AsciiCharacterOutOfRangeException
+  - uid: Sudoku.Exceptions.NumberLocationException
+    name: NumberLocationException
+  - uid: Sudoku.Exceptions.UnsolvableBoardException
+    name: UnsolvableBoardException
+- uid: Sudoku.Input_and_Output
+  name: Sudoku.Input_and_Output
+  items:
+  - uid: Sudoku.Input_and_Output.IOThroughConsole
+    name: IOThroughConsole
+  - uid: Sudoku.Input_and_Output.IOThroughTextFile
+    name: IOThroughTextFile
+  - uid: Sudoku.Input_and_Output.MainBoardIO
+    name: MainBoardIO
+- uid: Sudoku.Logic
+  name: Sudoku.Logic
+  items:
+  - uid: Sudoku.Logic.HandleBitwise
+    name: HandleBitwise
+  - uid: Sudoku.Logic.HandleMatrix
+    name: HandleMatrix
+  - uid: Sudoku.Logic.HandleString
+    name: HandleString
+  - uid: Sudoku.Logic.HumanTechniques
+    name: HumanTechniques
+  - uid: Sudoku.Logic.SudokuBoardSolver
+    name: SudokuBoardSolver
