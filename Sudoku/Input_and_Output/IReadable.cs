@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Sudoku.Input_and_Output
-{ 
+{
     interface IReadable
     {
         string InputSudokuBoard();

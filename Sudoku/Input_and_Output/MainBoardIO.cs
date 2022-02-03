@@ -31,16 +31,16 @@ namespace Sudoku.Input_and_Output
         {
             Console.WriteLine("Do you want to insert a sudoku board through a text file or through the console?");
             Console.Write("Enter 1 to insert the board through a text file and 2 to insert the board through the console:  ");
-            int theChosenNumber = this.InputNumber();
+            int theChosenNumber = InputPossitiveNumber();
             while (theChosenNumber != 1 && theChosenNumber != 2)
             {
                 Console.Write("You have to choose the number 1 or 2:  ");
-                theChosenNumber = this.InputNumber();
+                theChosenNumber = InputPossitiveNumber();
             }
             return theChosenNumber;
         }
 
-        private int InputNumber()
+        public static int InputPossitiveNumber()
         {
             int theChosenNumber;
             try
