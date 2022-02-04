@@ -20,10 +20,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: UnsolvableBoardException
     path: Exceptions/UnsolvableBoardException.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Exceptions
+  summary: "\nexception class that occurs when the board is unsolvable\n"
+  example: []
   syntax:
     content: 'public class UnsolvableBoardException : Exception, ISerializable, _Exception'
     content.vb: >-
@@ -79,15 +81,18 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Exceptions/UnsolvableBoardException.cs
-    startLine: 10
+    startLine: 17
   assemblies:
   - Sudoku
   namespace: Sudoku.Exceptions
+  summary: "\nbuild the exception object with message\n"
+  example: []
   syntax:
     content: public UnsolvableBoardException(string message)
     parameters:
     - id: message
       type: System.String
+      description: The message for creating the exception
     content.vb: Public Sub New(message As String)
   overload: Sudoku.Exceptions.UnsolvableBoardException.#ctor*
   modifiers.csharp:

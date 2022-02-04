@@ -22,10 +22,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IOThroughTextFile
     path: Input_and_Output/IOThroughTextFile.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nclass that allows input and output operations to be performed through a text file\n"
+  example: []
   syntax:
     content: public class IOThroughTextFile
     content.vb: Public Class IOThroughTextFile
@@ -63,10 +65,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Input_and_Output/IOThroughTextFile.cs
-    startLine: 16
+    startLine: 30
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nInitializes the class properties for creating IO object through a thext file.\n"
+  example: []
   syntax:
     content: public IOThroughTextFile()
     content.vb: Public Sub New
@@ -93,14 +97,17 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputSudokuBoard
     path: Input_and_Output/IOThroughTextFile.cs
-    startLine: 32
+    startLine: 54
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\ninput sudoku board through a text file\n"
+  example: []
   syntax:
     content: public string InputSudokuBoard()
     return:
       type: System.String
+      description: string that representing the sudoku board
     content.vb: Public Function InputSudokuBoard As String
   overload: Sudoku.Input_and_Output.IOThroughTextFile.InputSudokuBoard*
   modifiers.csharp:
@@ -125,15 +132,18 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/IOThroughTextFile.cs
-    startLine: 49
+    startLine: 75
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\noutput the sudoku board through a text file in the same location of the unsolved board\n"
+  example: []
   syntax:
     content: public void OutputSudokuBoard(Board boardToPrint)
     parameters:
     - id: boardToPrint
       type: Sudoku.Board
+      description: the object of the board we want to write to the new file
     content.vb: Public Sub OutputSudokuBoard(boardToPrint As Board)
   overload: Sudoku.Input_and_Output.IOThroughTextFile.OutputSudokuBoard*
   modifiers.csharp:
@@ -141,6 +151,9 @@ items:
   modifiers.vb:
   - Public
 references:
+- uid: Sudoku.Input_and_Output.IReadable
+  commentId: T:Sudoku.Input_and_Output.IReadable
+  isExternal: true
 - uid: Sudoku.Input_and_Output
   commentId: N:Sudoku.Input_and_Output
   name: Sudoku.Input_and_Output

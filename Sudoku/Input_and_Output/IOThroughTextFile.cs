@@ -8,12 +8,26 @@ using System.Windows.Forms;
 
 namespace Sudoku.Input_and_Output
 {
+    /// <summary>
+    /// class that allows input and output operations to be performed through a text file
+    /// </summary>
+    /// <inheritdoc cref="IReadable"/>
+    /// <inheritdoc cref="IPrintable"/>
     public class IOThroughTextFile : IReadable, IPrintable
     {
+        /// <summary>
+        /// the text file path where the sudoku board is located
+        /// </summary>
         private string textFilePath;
 
+        /// <summary>
+        /// An object that allows the user to select a text file through the explorer
+        /// </summary>
         private OpenFileDialog textOfd;
 
+        /// <summary>
+        /// Initializes the class properties for creating IO object through a thext file.
+        /// </summary>
         public IOThroughTextFile()
         {
             this.textOfd = new OpenFileDialog();
@@ -22,6 +36,10 @@ namespace Sudoku.Input_and_Output
             this.textFilePath = this.GetPath();
         }
 
+        /// <summary>
+        /// get path to text file from the user
+        /// </summary>
+        /// <returns>the path of the text file</returns>
         private string GetPath()
         {
             if (this.textOfd.ShowDialog() == DialogResult.OK)
@@ -30,6 +48,10 @@ namespace Sudoku.Input_and_Output
             return GetPath();
         }
 
+        /// <summary>
+        /// input sudoku board through a text file
+        /// </summary>
+        /// <returns>string that representing the sudoku board</returns>
         public string InputSudokuBoard()
         {
             string strBoard;
@@ -47,6 +69,10 @@ namespace Sudoku.Input_and_Output
             return strBoard;
         }
 
+        /// <summary>
+        /// output the sudoku board through a text file in the same location of the unsolved board
+        /// </summary>
+        /// <param name="boardToPrint">the object of the board we want to write to the new file</param>
         public void OutputSudokuBoard(Board boardToPrint)
         {
             Console.WriteLine("\nThe solved board was successfully written to the a file in the folder where the file with the unsolved board is located");

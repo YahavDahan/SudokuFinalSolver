@@ -8,6 +8,10 @@ namespace Sudoku.Input_and_Output
 {
     interface IReadable
     {
+        /// <summary>
+        /// Classes that can input a sudoku board implement this interface
+        /// </summary>
+        /// <returns>string that representing the sudoku board</returns>
         string InputSudokuBoard();
     }
 }

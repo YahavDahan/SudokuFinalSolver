@@ -23,10 +23,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: MainBoardIO
     path: Input_and_Output/MainBoardIO.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nThe class manages all input and output from the user\n"
+  example: []
   syntax:
     content: public class MainBoardIO
     content.vb: Public Class MainBoardIO
@@ -64,10 +66,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Input_and_Output/MainBoardIO.cs
-    startLine: 13
+    startLine: 26
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nProduces an object that initializes the properties and determines through which class the board will be absorbed and printed\n"
+  example: []
   syntax:
     content: public MainBoardIO()
     content.vb: Public Sub New
@@ -94,14 +98,17 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputPossitiveNumber
     path: Input_and_Output/MainBoardIO.cs
-    startLine: 42
+    startLine: 63
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nthe function receive a possitive number from the user\n"
+  example: []
   syntax:
     content: public static int InputPossitiveNumber()
     return:
       type: System.Int32
+      description: return a possitive number or -1 if an exception occurred
     content.vb: Public Shared Function InputPossitiveNumber As Integer
   overload: Sudoku.Input_and_Output.MainBoardIO.InputPossitiveNumber*
   modifiers.csharp:
@@ -128,14 +135,17 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputStringBoard
     path: Input_and_Output/MainBoardIO.cs
-    startLine: 56
+    startLine: 81
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nThe function performs the reception of the board through the class defined in the property - inputObj\n"
+  example: []
   syntax:
     content: public string InputStringBoard()
     return:
       type: System.String
+      description: return a string that representing a sudoku board
     content.vb: Public Function InputStringBoard As String
   overload: Sudoku.Input_and_Output.MainBoardIO.InputStringBoard*
   modifiers.csharp:
@@ -160,15 +170,18 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/MainBoardIO.cs
-    startLine: 61
+    startLine: 90
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nThe function performs the printing of the board through the class defined in the property - outputObj\n"
+  example: []
   syntax:
     content: public void OutputSudokuBoard(Board boardToPrint)
     parameters:
     - id: boardToPrint
       type: Sudoku.Board
+      description: the board object we wan to print
     content.vb: Public Sub OutputSudokuBoard(boardToPrint As Board)
   overload: Sudoku.Input_and_Output.MainBoardIO.OutputSudokuBoard*
   modifiers.csharp:

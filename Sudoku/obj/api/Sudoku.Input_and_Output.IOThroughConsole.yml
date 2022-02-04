@@ -22,10 +22,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IOThroughConsole
     path: Input_and_Output/IOThroughConsole.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nclass that allows input and output operations to be performed through the console\n"
+  example: []
   syntax:
     content: public class IOThroughConsole
     content.vb: Public Class IOThroughConsole
@@ -63,10 +65,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Input_and_Output/IOThroughConsole.cs
-    startLine: 10
+    startLine: 18
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\nempty constructor for creating IO object through the console\n"
+  example: []
   syntax:
     content: public IOThroughConsole()
     content.vb: Public Sub New
@@ -93,14 +97,17 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputSudokuBoard
     path: Input_and_Output/IOThroughConsole.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\ninput sudoku board through the console\n"
+  example: []
   syntax:
     content: public string InputSudokuBoard()
     return:
       type: System.String
+      description: string that representing the sudoku board
     content.vb: Public Function InputSudokuBoard As String
   overload: Sudoku.Input_and_Output.IOThroughConsole.InputSudokuBoard*
   modifiers.csharp:
@@ -125,15 +132,18 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/IOThroughConsole.cs
-    startLine: 29
+    startLine: 45
   assemblies:
   - Sudoku
   namespace: Sudoku.Input_and_Output
+  summary: "\noutput the sudoku board through the console\n"
+  example: []
   syntax:
     content: public void OutputSudokuBoard(Board boardToPrint)
     parameters:
     - id: boardToPrint
       type: Sudoku.Board
+      description: the object of the board we want to print to the user
     content.vb: Public Sub OutputSudokuBoard(boardToPrint As Board)
   overload: Sudoku.Input_and_Output.IOThroughConsole.OutputSudokuBoard*
   modifiers.csharp:
@@ -141,6 +151,9 @@ items:
   modifiers.vb:
   - Public
 references:
+- uid: Sudoku.Input_and_Output.IReadable
+  commentId: T:Sudoku.Input_and_Output.IReadable
+  isExternal: true
 - uid: Sudoku.Input_and_Output
   commentId: N:Sudoku.Input_and_Output
   name: Sudoku.Input_and_Output

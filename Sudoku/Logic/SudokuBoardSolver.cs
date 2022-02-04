@@ -21,7 +21,7 @@ namespace Sudoku.Logic
 
         private static bool BacktrackingSolver(Board sudokuBoardToSolve)
         {
-            int countNumOfChanges = HumanTechniques.SolveWithHumanTechniques(sudokuBoardToSolve); ;
+            int countNumOfChanges = HumanTechniques.SolveWithHumanTechniques(sudokuBoardToSolve);
             if (countNumOfChanges == -1)
                 return false;
 
