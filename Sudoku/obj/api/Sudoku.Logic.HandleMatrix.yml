@@ -20,10 +20,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HandleMatrix
     path: Logic/HandleMatrix.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis class handles all general functions related to matrices\n"
+  example: []
   syntax:
     content: public static class HandleMatrix
     content.vb: Public Module HandleMatrix
@@ -62,17 +64,22 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IntegerMatrixToString
     path: Logic/HandleMatrix.cs
-    startLine: 10
+    startLine: 25
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis function converts a matrix of numbers to a string\n"
+  example:
+  - "\n<pre><code>int[,] myMatrix = new int[,] {{ 1, 0, 0, 2 }, { 0, 3, 1, 0 }, { 0, 0, 0, 3 }, { 4, 2, 0, 0 }};\nConsole.WriteLine(IntegerMatrixToString(myMatrix));</code></pre>\nthe return string: &quot;1002031000034200&quot;\n"
   syntax:
     content: public static string IntegerMatrixToString(int[, ] matrix)
     parameters:
     - id: matrix
       type: System.Int32[,]
+      description: the matrix we want to convert to string
     return:
       type: System.String
+      description: the string that representing the integer matrix
     content.vb: Public Shared Function IntegerMatrixToString(matrix As Integer(,)) As String
   overload: Sudoku.Logic.HandleMatrix.IntegerMatrixToString*
   nameWithType.vb: HandleMatrix.IntegerMatrixToString(Int32(,))

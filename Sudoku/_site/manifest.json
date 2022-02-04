@@ -12,7 +12,7 @@
           "hash": "UT9aUhItYAn+NoWgFQdLedMxzCocGnwvjKnbAuuTko8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "FBzGmjrytcZ/zfmkFSIKpIYPqaCMxYyYGbgfTesOlVg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "e6S5Nc40NLTSg55gZuDDhrJzhk7oAGn0Umpi72PBoHQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Board.html",
-          "hash": "oZxFrHgZPUqQ/5HlpsobDzTaFTIbz7/MqJAKN9k8ijQ="
+          "hash": "kR619uXNRMKYf70hbNoZquQOv/0JMHf/rczZw/BsVWI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "2TFUOijNLcBP+BblZpdTP+T6zbdJbBlg6MCtO6uqFKY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "2rhvih5CVUYg1BTtCjL19Djh6Sq9xXLexbzEfsXW7xE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "AT9QPCxHmjdmuGxe7pjMRl90J8cItPIcsNCdnIR+6sg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "nZuF6eGPtvkrvDpIdDlhmQusONdhGODuvMZN4Hbt7UI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "aFmHxDjznAurE3utk3l3XXaX30zBfhkUPcO93kq1GI4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "VB7qVzGJtZJvzgxqjMsgfPbh0apCEm7E3V824YRkq7U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "nbb0JK944ssSCh5tYGanLnuFjUykxnicU26MMDR3MkQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "Ta86CxiSkyjI0zTlKaKnuWpSbvGoLy9TPdUnd4VevVo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.HandleBitwise.html",
-          "hash": "U8FaViWjdK5IWym7qyIn1nRD5Ajs1KACI4S7D5U4V4U="
+          "hash": "0prUXrKICdh3/5uaadJmogbHyKpK7epWPUy0juIHfD0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.HandleMatrix.html",
-          "hash": "5DEz+5LKSEqOX9FhFEmyi+hIM7YvD9Whs6Bs7ituULE="
+          "hash": "QboA6PiNOYFqb9Kl8h3fx7TfsLBcvUY6oVY5PuDRyCE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.HandleString.html",
-          "hash": "7zDvn6oKqoFDEOLjhCe29sogACq4HTCp2Unb6DATSUA="
+          "hash": "HfTRu661LyHN6otoBB+p49Z62ggYMgOfj4mXWxMHdas="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.HumanTechniques.html",
-          "hash": "iwGMsV90Dq+pPjQYdIK31lp2Gx9E8JJsVDqvxjOnN6E="
+          "hash": "liTXqtv0kqb3vruYU8DaF994P4IXuROIaxw/z8XcPlM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.SudokuBoardSolver.html",
-          "hash": "Sw7y3sUYiQLQHiytmnbq1CEiYLS4FuNuw5E9f8UQQ9Q="
+          "hash": "U/4UDk7oQR5nRL3hAUAUk+Pk1UtHalHkfP59zRHC1Ok="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.Logic.html",
-          "hash": "iGGqemIhmTf7G8luEbVd0Xi/9y6XBjy2gCM6fZpgYMY="
+          "hash": "BihSEUwaRHf45jWsHrj5M6y0gJW/RKlcMRpWsgczWo0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sudoku.html",
-          "hash": "35xrB5EeSckKycVbt687cPuDZbHDbCK6UKWyjfU76Ao="
+          "hash": "FtVzhhyB+5Oogj+4JHzmOy3EjdiohgYuq/KapnZlfC8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -271,25 +271,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 16,
-          "skipped_file_count": 0
+          "skipped_file_count": 16
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -302,8 +300,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

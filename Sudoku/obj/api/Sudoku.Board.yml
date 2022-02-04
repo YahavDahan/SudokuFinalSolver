@@ -15,6 +15,7 @@ items:
   - Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)
   - Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)
   - Sudoku.Board.RowsArr
+  - Sudoku.Board.ToString
   - Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
   langs:
   - csharp
@@ -34,7 +35,7 @@ items:
   assemblies:
   - Sudoku
   namespace: Sudoku
-  summary: "\nA class that representing an object of a sudoku board\n"
+  summary: "\nA class that representing an object of a sudoku board of all sizes\n"
   example: []
   syntax:
     content: public class Board
@@ -42,7 +43,6 @@ items:
   inheritance:
   - System.Object
   inheritedMembers:
-  - System.Object.ToString
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
@@ -491,6 +491,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Sudoku.Board.ToString
+  commentId: M:Sudoku.Board.ToString
+  id: ToString
+  parent: Sudoku.Board
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Board.ToString()
+  fullName: Sudoku.Board.ToString()
+  type: Method
+  source:
+    remote:
+      path: Sudoku/Board.cs
+      branch: master
+      repo: https://github.com/YahavDahan/SudokuFinalSolver.git
+    id: ToString
+    path: Board.cs
+    startLine: 182
+  assemblies:
+  - Sudoku
+  namespace: Sudoku
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Sudoku.Board.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
 references:
 - uid: Sudoku
   commentId: N:Sudoku
@@ -504,37 +539,6 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -937,3 +941,39 @@ references:
   name: GetSubSize
   nameWithType: Board.GetSubSize
   fullName: Sudoku.Board.GetSubSize
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sudoku.Board.ToString*
+  commentId: Overload:Sudoku.Board.ToString
+  name: ToString
+  nameWithType: Board.ToString
+  fullName: Sudoku.Board.ToString

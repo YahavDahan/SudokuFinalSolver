@@ -143,6 +143,19 @@ references:
   isSpec: "True"
   fullName: Sudoku.Board.RowsArr
   nameWithType: Board.RowsArr
+- uid: Sudoku.Board.ToString
+  name: ToString()
+  href: api/Sudoku.Board.html#Sudoku_Board_ToString
+  commentId: M:Sudoku.Board.ToString
+  fullName: Sudoku.Board.ToString()
+  nameWithType: Board.ToString()
+- uid: Sudoku.Board.ToString*
+  name: ToString
+  href: api/Sudoku.Board.html#Sudoku_Board_ToString_
+  commentId: Overload:Sudoku.Board.ToString
+  isSpec: "True"
+  fullName: Sudoku.Board.ToString
+  nameWithType: Board.ToString
 - uid: Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)
   name: UpdateValue(Int32, UInt64, Int32, Int32)
   href: api/Sudoku.Board.html#Sudoku_Board_UpdateValue_System_Int32_System_UInt64_System_Int32_System_Int32_

@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace Sudoku.Logic
 {
+    /// <summary>
+    /// This class handles all general functions related to matrices
+    /// </summary>
     public static class HandleMatrix
     {
+        /// <summary>
+        /// this function converts a matrix of numbers to a string
+        /// </summary>
+        /// <param name="matrix">the matrix we want to convert to string</param>
+        /// <returns>the string that representing the integer matrix</returns>
+        /// <example>
+        /// <code>
+        /// int[,] myMatrix = new int[,] {{ 1, 0, 0, 2 }, { 0, 3, 1, 0 }, { 0, 0, 0, 3 }, { 4, 2, 0, 0 }};
+        /// Console.WriteLine(IntegerMatrixToString(myMatrix));
+        /// </code>
+        /// the return string: "1002031000034200"
+        /// </example>
         public static string IntegerMatrixToString(int[,] matrix)
         {
             string strMatrix = "";

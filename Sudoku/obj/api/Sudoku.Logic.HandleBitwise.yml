@@ -24,10 +24,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HandleBitwise
     path: Logic/HandleBitwise.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis class handles all general functions related to bitwise\n"
+  example: []
   syntax:
     content: public static class HandleBitwise
     content.vb: Public Module HandleBitwise
@@ -66,17 +68,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CountOneBits
     path: Logic/HandleBitwise.cs
-    startLine: 22
+    startLine: 35
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthe function count the one bits in ulong number.\nTime complexity: O(1)\n"
+  example: []
   syntax:
     content: public static int CountOneBits(ulong number)
     parameters:
     - id: number
       type: System.UInt64
+      description: The number we want to count its one bits
     return:
       type: System.Int32
+      description: the amount of one bits in the number
     content.vb: Public Shared Function CountOneBits(number As ULong) As Integer
   overload: Sudoku.Logic.HandleBitwise.CountOneBits*
   modifiers.csharp:
@@ -103,17 +109,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IsPowerOfTwo
     path: Logic/HandleBitwise.cs
-    startLine: 34
+    startLine: 53
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nchecks if number is power of 2 (only one bit is on)\nTime complexity: O(1)\n"
+  example: []
   syntax:
     content: public static bool IsPowerOfTwo(ulong number)
     parameters:
     - id: number
       type: System.UInt64
+      description: the number we want to check if its power of two
     return:
       type: System.Boolean
+      description: true if only one bit of the number is on, otherwise returns false
     content.vb: Public Shared Function IsPowerOfTwo(number As ULong) As Boolean
   overload: Sudoku.Logic.HandleBitwise.IsPowerOfTwo*
   modifiers.csharp:
@@ -140,17 +150,22 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CreateMaskFromNumber
     path: Logic/HandleBitwise.cs
-    startLine: 39
+    startLine: 68
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthe function creates ulong mask from integer number\nTime complexity: O(1)\n"
+  example:
+  - "\nif number = 4  ,  the result will be -> 1000\nif number = 7  ,  the result will be -> 1000000\n"
   syntax:
     content: public static ulong CreateMaskFromNumber(int numberForCreatingMask)
     parameters:
     - id: numberForCreatingMask
       type: System.Int32
+      description: the number we want to convert to mask
     return:
       type: System.UInt64
+      description: the mask that the number represents
     content.vb: Public Shared Function CreateMaskFromNumber(numberForCreatingMask As Integer) As ULong
   overload: Sudoku.Logic.HandleBitwise.CreateMaskFromNumber*
   modifiers.csharp:
@@ -177,17 +192,22 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CreateNumberFromMask
     path: Logic/HandleBitwise.cs
-    startLine: 48
+    startLine: 86
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthe function creates number from ulong mask\n"
+  example:
+  - "\nif mask = 10000  ,  the result will be -> 5\nif mask = 100000000  ,  the result will be -> 9\n"
   syntax:
     content: public static int CreateNumberFromMask(ulong maskForCreatingNumber)
     parameters:
     - id: maskForCreatingNumber
       type: System.UInt64
+      description: mask of a number (only one bit is on)
     return:
       type: System.Int32
+      description: the number that the mask represents
     content.vb: Public Shared Function CreateNumberFromMask(maskForCreatingNumber As ULong) As Integer
   overload: Sudoku.Logic.HandleBitwise.CreateNumberFromMask*
   modifiers.csharp:
@@ -214,17 +234,25 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: Log2ToNumber
     path: Logic/HandleBitwise.cs
-    startLine: 53
+    startLine: 102
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nChecks the log2 mathematical operation of a number\n"
+  example:
+  - >
+    <pre><code>    ulong num = 16;
+        Console.WriteLine(Log2ToNumber(num));</code></pre>
+    the result will be: 4
   syntax:
     content: public static int Log2ToNumber(ulong number)
     parameters:
     - id: number
       type: System.UInt64
+      description: A number we want to calculate its log2
     return:
       type: System.Int32
+      description: the result of log2 of the number
     content.vb: Public Shared Function Log2ToNumber(number As ULong) As Integer
   overload: Sudoku.Logic.HandleBitwise.Log2ToNumber*
   modifiers.csharp:

@@ -24,10 +24,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: SudokuBoardSolver
     path: Logic/SudokuBoardSolver.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis class is responsible for solving sudoku board of all sizes\n"
+  example: []
   syntax:
     content: public static class SudokuBoardSolver
     content.vb: Public Module SudokuBoardSolver
@@ -66,10 +68,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: locationsOfBoardchangesStack
     path: Logic/SudokuBoardSolver.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nstack for saving the location of the changed data in the sudoku board during the backtracking function\n"
+  example: []
   syntax:
     content: public static Stack<int> locationsOfBoardchangesStack
     return:
@@ -99,17 +103,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: Solver
     path: Logic/SudokuBoardSolver.cs
-    startLine: 13
+    startLine: 23
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis function is responsible for solving the sudoku board and emptying the stack at the end of the solution in preparation for the next solving.\n"
+  example: []
   syntax:
     content: public static bool Solver(Board sudokuBoardToSolve)
     parameters:
     - id: sudokuBoardToSolve
       type: Sudoku.Board
+      description: the sudoku board object we want to solve
     return:
       type: System.Boolean
+      description: true if the board solved, if the board cannot be solved return false
     content.vb: Public Shared Function Solver(sudokuBoardToSolve As Board) As Boolean
   overload: Sudoku.Logic.SudokuBoardSolver.Solver*
   modifiers.csharp:
@@ -136,21 +144,27 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CountLegalNumbersInCurrentIndex
     path: Logic/SudokuBoardSolver.cs
-    startLine: 48
+    startLine: 77
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis function counts the legal possible numbers to put in particular location.\nTime complexity: O(1)\n"
+  example: []
   syntax:
     content: public static int CountLegalNumbersInCurrentIndex(Board board, int row, int col)
     parameters:
     - id: board
       type: Sudoku.Board
+      description: A board that we want to find for one of the cells in it the number of possible options that can be put in it
     - id: row
       type: System.Int32
+      description: the row of the cell we want to check
     - id: col
       type: System.Int32
+      description: the column of the cell we want to check
     return:
       type: System.Int32
+      description: the number of possible number in the current location
     content.vb: Public Shared Function CountLegalNumbersInCurrentIndex(board As Board, row As Integer, col As Integer) As Integer
   overload: Sudoku.Logic.SudokuBoardSolver.CountLegalNumbersInCurrentIndex*
   modifiers.csharp:
@@ -177,17 +191,22 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: FindMinimumLocation
     path: Logic/SudokuBoardSolver.cs
-    startLine: 54
+    startLine: 93
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis function finds the empty cell with the minimum amount of possibe numbers to put in it\n"
+  example:
+  - "\nfor 9x9 board:\nif the cell was found in row number 5 and column number 7, 52 will be the returned location\n5 * 9 + 7 = 52   (rowNum * boardSize + colNum)\n"
   syntax:
     content: public static int FindMinimumLocation(Board board)
     parameters:
     - id: board
       type: Sudoku.Board
+      description: The board where the cell is searched
     return:
       type: System.Int32
+      description: the location of the empty cell with the minimum possible option to put in it. if the board is full, return -1
     content.vb: Public Shared Function FindMinimumLocation(board As Board) As Integer
   overload: Sudoku.Logic.SudokuBoardSolver.FindMinimumLocation*
   modifiers.csharp:
@@ -214,17 +233,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: RemoveValuesFromBoard
     path: Logic/SudokuBoardSolver.cs
-    startLine: 80
+    startLine: 124
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthe function removes numbers from the board - pulls their location out of the stack (static property) and remove them from the board object.\n"
+  example: []
   syntax:
     content: public static void RemoveValuesFromBoard(Board board, int numberOfValuesToRemove)
     parameters:
     - id: board
       type: Sudoku.Board
+      description: The object of the board from which we want to remove the values
     - id: numberOfValuesToRemove
       type: System.Int32
+      description: the amount of numbers we want to remove from the board
     content.vb: Public Shared Sub RemoveValuesFromBoard(board As Board, numberOfValuesToRemove As Integer)
   overload: Sudoku.Logic.SudokuBoardSolver.RemoveValuesFromBoard*
   modifiers.csharp:

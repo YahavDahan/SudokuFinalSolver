@@ -23,10 +23,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HumanTechniques
     path: Logic/HumanTechniques.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis class handles all the human techniques for solving a sudoku board\n"
+  example: []
   syntax:
     content: public static class HumanTechniques
     content.vb: Public Module HumanTechniques
@@ -65,10 +67,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: countChangesInTheBoard
     path: Logic/HumanTechniques.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nIndicates the number of changes that made in the sudoku board as a result of the human techniques\n"
+  example: []
   syntax:
     content: public static int countChangesInTheBoard
     return:
@@ -98,10 +102,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: isBoardValid
     path: Logic/HumanTechniques.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nindicates if the board is valid when trying to use the human techniques\n"
+  example: []
   syntax:
     content: public static bool isBoardValid
     return:
@@ -131,17 +137,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: SolveWithHumanTechniques
     path: Logic/HumanTechniques.cs
-    startLine: 14
+    startLine: 28
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis function operates human methods on the sudoku board\n"
+  example: []
   syntax:
     content: public static int SolveWithHumanTechniques(Board boardToSolve)
     parameters:
     - id: boardToSolve
       type: Sudoku.Board
+      description: the board object we want to try the techniques on
     return:
       type: System.Int32
+      description: the number of changes that have occurred in the board. if an error occurred during one of the techniques, returns -1
     content.vb: Public Shared Function SolveWithHumanTechniques(boardToSolve As Board) As Integer
   overload: Sudoku.Logic.HumanTechniques.SolveWithHumanTechniques*
   modifiers.csharp:
@@ -168,21 +178,27 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CheckPossibleNumbersInCurrentIndex
     path: Logic/HumanTechniques.cs
-    startLine: 220
+    startLine: 317
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThe function finds the possible numbers that can be put in a particular cell on the board\n"
+  example: []
   syntax:
     content: public static ulong CheckPossibleNumbersInCurrentIndex(Board board, int row, int col)
     parameters:
     - id: board
       type: Sudoku.Board
+      description: A board that we want to find for one of the cells in it the possible numbers that can be put in it
     - id: row
       type: System.Int32
+      description: the row of the cell we want to check
     - id: col
       type: System.Int32
+      description: the column of the cell we want to check
     return:
       type: System.UInt64
+      description: the mask of the possibilities that can be insert in the current cell
     content.vb: Public Shared Function CheckPossibleNumbersInCurrentIndex(board As Board, row As Integer, col As Integer) As ULong
   overload: Sudoku.Logic.HumanTechniques.CheckPossibleNumbersInCurrentIndex*
   modifiers.csharp:

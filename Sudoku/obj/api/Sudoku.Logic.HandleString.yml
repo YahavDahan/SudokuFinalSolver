@@ -23,10 +23,12 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HandleString
     path: Logic/HandleString.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis class handles all general functions related to strings\n"
+  example: []
   syntax:
     content: public static class HandleString
     content.vb: Public Module HandleString
@@ -65,17 +67,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: ConvertCharToIntegerTypeAsNumber
     path: Logic/HandleString.cs
-    startLine: 10
+    startLine: 18
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis function convert character to number (integer)\n"
+  example: []
   syntax:
     content: public static int ConvertCharToIntegerTypeAsNumber(char tavToConvert)
     parameters:
     - id: tavToConvert
       type: System.Char
+      description: the character we want to convert
     return:
       type: System.Int32
+      description: The number after the conversion
     content.vb: Public Shared Function ConvertCharToIntegerTypeAsNumber(tavToConvert As Char) As Integer
   overload: Sudoku.Logic.HandleString.ConvertCharToIntegerTypeAsNumber*
   modifiers.csharp:
@@ -102,17 +108,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: ConvertIntegerAsNumberToCharType
     path: Logic/HandleString.cs
-    startLine: 15
+    startLine: 28
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis function convert integer number to character type\n"
+  example: []
   syntax:
     content: public static char ConvertIntegerAsNumberToCharType(int numberToConvert)
     parameters:
     - id: numberToConvert
       type: System.Int32
+      description: the number we want to convert
     return:
       type: System.Char
+      description: The character after the conversion
     content.vb: Public Shared Function ConvertIntegerAsNumberToCharType(numberToConvert As Integer) As Char
   overload: Sudoku.Logic.HandleString.ConvertIntegerAsNumberToCharType*
   modifiers.csharp:
@@ -139,17 +149,21 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IsValidLengthToCreateSudokuBoard
     path: Logic/HandleString.cs
-    startLine: 20
+    startLine: 38
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nThis function checks if the length of a string is valid to create a sudoku board\n"
+  example: []
   syntax:
     content: public static bool IsValidLengthToCreateSudokuBoard(string strBoard)
     parameters:
     - id: strBoard
       type: System.String
+      description: string that representing a sudoku board
     return:
       type: System.Boolean
+      description: true if the length is valid to create a sudoku board, otherwise returns false
     content.vb: Public Shared Function IsValidLengthToCreateSudokuBoard(strBoard As String) As Boolean
   overload: Sudoku.Logic.HandleString.IsValidLengthToCreateSudokuBoard*
   modifiers.csharp:
@@ -176,19 +190,24 @@ items:
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: AreAllTheCharactersAsciiCodeValid
     path: Logic/HandleString.cs
-    startLine: 29
+    startLine: 53
   assemblies:
   - Sudoku
   namespace: Sudoku.Logic
+  summary: "\nthis fanction checks if all the charcters in string are representing number in the range of 0 to the parameter &apos;theNumberOfTheValidCharacters&apos;\n"
+  example: []
   syntax:
     content: public static bool AreAllTheCharactersAsciiCodeValid(string strBoard, int theNumberOfTheValidCharacters)
     parameters:
     - id: strBoard
       type: System.String
+      description: A string that we want to check its characters
     - id: theNumberOfTheValidCharacters
       type: System.Int32
+      description: the maximum number that character can reoresent
     return:
       type: System.Boolean
+      description: true if all the caracters in the string are in the range
     content.vb: Public Shared Function AreAllTheCharactersAsciiCodeValid(strBoard As String, theNumberOfTheValidCharacters As Integer) As Boolean
   overload: Sudoku.Logic.HandleString.AreAllTheCharactersAsciiCodeValid*
   modifiers.csharp:

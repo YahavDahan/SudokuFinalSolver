@@ -76,7 +76,7 @@ namespace Sudoku.Input_and_Output
         public void OutputSudokuBoard(Board boardToPrint)
         {
             Console.WriteLine("\nThe solved board was successfully written to the a file in the folder where the file with the unsolved board is located");
-            string strBoard = Logic.HandleMatrix.IntegerMatrixToString(boardToPrint.BoardMatrix);
+            string strBoard = boardToPrint.ToString();
             string fileToWriteTheSolution = this.textFilePath.Replace(".txt", "Solution.txt");
             File.WriteAllText(fileToWriteTheSolution, strBoard);
         }

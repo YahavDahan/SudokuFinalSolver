@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Sudoku
 {
     /// <summary>
-    /// A class that representing an object of a sudoku board
+    /// A class that representing an object of a sudoku board of all sizes
     /// </summary>
     public class Board
     {
@@ -111,7 +111,7 @@ namespace Sudoku
             this.boardMatrix[row, col] = valueForUpdate;
             this.rowsArr[row] |= maskOfTheValueForUpdate;
             this.colsArr[col] |= maskOfTheValueForUpdate;
-            this.boxesArr[row - (row % this.subSize) + col / this.subSize] |= maskOfTheValueForUpdate;
+            this.boxesArr[GetBoxNumberByRowAndColumn(row, col)] |= maskOfTheValueForUpdate;
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Sudoku
             maskOfTheValueToRemove ^= (((ulong)1 << this.size) - 1);
             this.rowsArr[row] &= maskOfTheValueToRemove;
             this.colsArr[col] &= maskOfTheValueToRemove;
-            this.boxesArr[row - (row % this.subSize) + col / this.subSize] &= maskOfTheValueToRemove;
+            this.boxesArr[GetBoxNumberByRowAndColumn(row, col)] &= maskOfTheValueToRemove;
         }
 
         /// <value>Property <c>RowsArr</c> represents the rows bitboard array</value>
@@ -178,6 +178,11 @@ namespace Sudoku
         public int GetSubSize()
         {
             return this.subSize;
+        }
+
+        public override string ToString()
+        {
+            return Logic.HandleMatrix.IntegerMatrixToString(this.boardMatrix);
         }
     }
 }

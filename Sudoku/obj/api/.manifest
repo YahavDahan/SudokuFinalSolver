@@ -11,6 +11,7 @@
   "Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)": "Sudoku.Board.yml",
   "Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)": "Sudoku.Board.yml",
   "Sudoku.Board.RowsArr": "Sudoku.Board.yml",
+  "Sudoku.Board.ToString": "Sudoku.Board.yml",
   "Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)": "Sudoku.Board.yml",
   "Sudoku.Exceptions": "Sudoku.Exceptions.yml",
   "Sudoku.Exceptions.AsciiCharacterOutOfRangeException": "Sudoku.Exceptions.AsciiCharacterOutOfRangeException.yml",
