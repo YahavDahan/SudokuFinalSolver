@@ -1,0 +1,17 @@
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\SudokuSolver.UnitTest.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\SudokuSolver.UnitTest.pdb
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Sudoku.exe
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Sudoku.pdb
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Sudoku.exe.config
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Sudoku\SudokuSolver.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Sudoku\SudokuSolver.UnitTest\obj\Debug\SudokuSolver.UnitTest.csproj.AssemblyReference.cache
+C:\Sudoku\SudokuSolver.UnitTest\obj\Debug\SudokuSolver.UnitTest.csproj.CoreCompileInputs.cache
+C:\Sudoku\SudokuSolver.UnitTest\obj\Debug\SudokuSolver.UnitTest.csproj.CopyComplete
+C:\Sudoku\SudokuSolver.UnitTest\obj\Debug\SudokuSolver.UnitTest.dll
+C:\Sudoku\SudokuSolver.UnitTest\obj\Debug\SudokuSolver.UnitTest.pdb
