@@ -39,7 +39,7 @@ namespace Sudoku.Logic
         public static bool IsValidLengthToCreateSudokuBoard(string strBoard)
         {
             double sqrtOfStrBoardLength = Math.Sqrt(strBoard.Length);
-            if (strBoard.Length > 4096 || sqrtOfStrBoardLength - Math.Floor(sqrtOfStrBoardLength) != 0 ||
+            if (strBoard.Length > 4096 || strBoard.Length == 0 || sqrtOfStrBoardLength - Math.Floor(sqrtOfStrBoardLength) != 0 ||
                 Math.Sqrt(sqrtOfStrBoardLength) - Math.Floor(Math.Sqrt(sqrtOfStrBoardLength)) != 0)
                 return false;
             return true;

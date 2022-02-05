@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/IOThroughConsole.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: IOThroughConsole
     path: Input_and_Output/IOThroughConsole.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/IOThroughConsole.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Input_and_Output/IOThroughConsole.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/IOThroughConsole.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputSudokuBoard
     path: Input_and_Output/IOThroughConsole.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/IOThroughConsole.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/IOThroughConsole.cs

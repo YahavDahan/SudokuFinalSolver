@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Board
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Board
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sudoku.Board">
+  
+  
+  <h1 id="Sudoku_Board" data-uid="Sudoku.Board" class="text-break">Class Board
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">A class that representing an object of a sudoku board of all sizes</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Board</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sudoku.html">Sudoku</a></h6>
+  <h6><strong>Assembly</strong>: Sudoku.dll</h6>
+  <h5 id="Sudoku_Board_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Board</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board__ctor_System_String_.md&amp;value=---%0Auid%3A%20Sudoku.Board.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L57">View Source</a>
+  </span>
+  <a id="Sudoku_Board__ctor_" data-uid="Sudoku.Board.#ctor*"></a>
+  <h4 id="Sudoku_Board__ctor_System_String_" data-uid="Sudoku.Board.#ctor(System.String)">Board(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Creates the board object and initializes the board properties dynamically according to the board string obtained as a parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Board(string strBoard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strBoard</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">string that representing the sudoku board</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">thrown when the length of the string parameter is incorrect for creating a sudoku board</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sudoku.Exceptions.AsciiCharacterOutOfRangeException.html">AsciiCharacterOutOfRangeException</a></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">thrown when one of the characters is invalid for creating a board</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sudoku.Exceptions.NumberLocationException.html">NumberLocationException</a></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">thrown when the character in particular location of the string is invalid in this location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_BoardMatrix.md&amp;value=---%0Auid%3A%20Sudoku.Board.BoardMatrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L165">View Source</a>
+  </span>
+  <a id="Sudoku_Board_BoardMatrix_" data-uid="Sudoku.Board.BoardMatrix*"></a>
+  <h4 id="Sudoku_Board_BoardMatrix" data-uid="Sudoku.Board.BoardMatrix">BoardMatrix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[, ] BoardMatrix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[,]</td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Property <code>BoardMatrix</code> represents the integer board matrix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_BoxesArr.md&amp;value=---%0Auid%3A%20Sudoku.Board.BoxesArr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L147">View Source</a>
+  </span>
+  <a id="Sudoku_Board_BoxesArr_" data-uid="Sudoku.Board.BoxesArr*"></a>
+  <h4 id="Sudoku_Board_BoxesArr" data-uid="Sudoku.Board.BoxesArr">BoxesArr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] BoxesArr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Property <code>BoxesArr</code> represents the Boxes bitboard array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_ColsArr.md&amp;value=---%0Auid%3A%20Sudoku.Board.ColsArr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L140">View Source</a>
+  </span>
+  <a id="Sudoku_Board_ColsArr_" data-uid="Sudoku.Board.ColsArr*"></a>
+  <h4 id="Sudoku_Board_ColsArr" data-uid="Sudoku.Board.ColsArr">ColsArr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] ColsArr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Property <code>ColsArr</code> represents the columns bitboard array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_RowsArr.md&amp;value=---%0Auid%3A%20Sudoku.Board.RowsArr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L133">View Source</a>
+  </span>
+  <a id="Sudoku_Board_RowsArr_" data-uid="Sudoku.Board.RowsArr*"></a>
+  <h4 id="Sudoku_Board_RowsArr" data-uid="Sudoku.Board.RowsArr">RowsArr</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] RowsArr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Property <code>RowsArr</code> represents the rows bitboard array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_GetBoxNumberByRowAndColumn_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L159">View Source</a>
+  </span>
+  <a id="Sudoku_Board_GetBoxNumberByRowAndColumn_" data-uid="Sudoku.Board.GetBoxNumberByRowAndColumn*"></a>
+  <h4 id="Sudoku_Board_GetBoxNumberByRowAndColumn_System_Int32_System_Int32_" data-uid="Sudoku.Board.GetBoxNumberByRowAndColumn(System.Int32,System.Int32)">GetBoxNumberByRowAndColumn(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">the function finds the box number of any location on the board</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBoxNumberByRowAndColumn(int rowNumber, int columnNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The row where we want to find the box number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnNumber</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The column where we want to find the box number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">returns the position of the box in the board</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_GetSize.md&amp;value=---%0Auid%3A%20Sudoku.Board.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L172">View Source</a>
+  </span>
+  <a id="Sudoku_Board_GetSize_" data-uid="Sudoku.Board.GetSize*"></a>
+  <h4 id="Sudoku_Board_GetSize" data-uid="Sudoku.Board.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the size of the board (the number of rows in the board)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_GetSubSize.md&amp;value=---%0Auid%3A%20Sudoku.Board.GetSubSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L178">View Source</a>
+  </span>
+  <a id="Sudoku_Board_GetSubSize_" data-uid="Sudoku.Board.GetSubSize*"></a>
+  <h4 id="Sudoku_Board_GetSubSize" data-uid="Sudoku.Board.GetSubSize">GetSubSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSubSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the subsize of the board - number of boxes in row (the square root of the number of rows in the board)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_IsNumberValidInThisLocation_System_UInt64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Sudoku.Board.IsNumberValidInThisLocation(System.UInt64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L91">View Source</a>
+  </span>
+  <a id="Sudoku_Board_IsNumberValidInThisLocation_" data-uid="Sudoku.Board.IsNumberValidInThisLocation*"></a>
+  <h4 id="Sudoku_Board_IsNumberValidInThisLocation_System_UInt64_System_Int32_System_Int32_" data-uid="Sudoku.Board.IsNumberValidInThisLocation(System.UInt64,System.Int32,System.Int32)">IsNumberValidInThisLocation(UInt64, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The function checks if number in particular location is valid in this location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNumberValidInThisLocation(ulong maskOfTheNumberForChecking, int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">maskOfTheNumberForChecking</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">mask that representing the number we want to check if valid in this location. for example, if the number is 5, his mask will be 10000</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The row where we want to check the validation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The column where we want to check the validation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the function returns true if the number is valid in this location, otherwise returns false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_RemoveValue_System_UInt64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Sudoku.Board.RemoveValue(System.UInt64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L123">View Source</a>
+  </span>
+  <a id="Sudoku_Board_RemoveValue_" data-uid="Sudoku.Board.RemoveValue*"></a>
+  <h4 id="Sudoku_Board_RemoveValue_System_UInt64_System_Int32_System_Int32_" data-uid="Sudoku.Board.RemoveValue(System.UInt64,System.Int32,System.Int32)">RemoveValue(UInt64, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The function removes a value at a particular location in the board</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveValue(ulong maskOfTheValueToRemove, int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">maskOfTheValueToRemove</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the mask of the number we want to remove from the board. for example, if the number we want to remove is 5, the mask will be 10000</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The row where we want to remove the number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The column where we want to remove the number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_ToString.md&amp;value=---%0Auid%3A%20Sudoku.Board.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L183">View Source</a>
+  </span>
+  <a id="Sudoku_Board_ToString_" data-uid="Sudoku.Board.ToString*"></a>
+  <h4 id="Sudoku_Board_ToString" data-uid="Sudoku.Board.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board_UpdateValue_System_Int32_System_UInt64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Sudoku.Board.UpdateValue(System.Int32%2CSystem.UInt64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L109">View Source</a>
+  </span>
+  <a id="Sudoku_Board_UpdateValue_" data-uid="Sudoku.Board.UpdateValue*"></a>
+  <h4 id="Sudoku_Board_UpdateValue_System_Int32_System_UInt64_System_Int32_System_Int32_" data-uid="Sudoku.Board.UpdateValue(System.Int32,System.UInt64,System.Int32,System.Int32)">UpdateValue(Int32, UInt64, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The function updates a value at a particular location in the board</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateValue(int valueForUpdate, ulong maskOfTheValueForUpdate, int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">valueForUpdate</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the new number we want to append to the board</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">maskOfTheValueForUpdate</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the mask of the number we want to add to the board. for example, if the number is 7, the mask will be 1000000</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The row to which we want to add the number</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td><p sourcefile="obj/api/Sudoku.Board.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The column to which we want to add the number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/YahavDahan/SudokuFinalSolver/new/tests/apiSpec/new?filename=Sudoku_Board.md&amp;value=---%0Auid%3A%20Sudoku.Board%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/YahavDahan/SudokuFinalSolver/blob/tests/Sudoku/Board.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

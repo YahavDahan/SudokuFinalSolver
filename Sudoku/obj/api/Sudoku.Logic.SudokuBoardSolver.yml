@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: SudokuBoardSolver
     path: Logic/SudokuBoardSolver.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: locationsOfBoardchangesStack
     path: Logic/SudokuBoardSolver.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: Solver
     path: Logic/SudokuBoardSolver.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CountLegalNumbersInCurrentIndex
     path: Logic/SudokuBoardSolver.cs
@@ -187,7 +187,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: FindMinimumLocation
     path: Logic/SudokuBoardSolver.cs
@@ -229,7 +229,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/SudokuBoardSolver.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: RemoveValuesFromBoard
     path: Logic/SudokuBoardSolver.cs
