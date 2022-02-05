@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HumanTechniques.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: HumanTechniques
     path: Logic/HumanTechniques.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HumanTechniques.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: countChangesInTheBoard
     path: Logic/HumanTechniques.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HumanTechniques.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: isBoardValid
     path: Logic/HumanTechniques.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HumanTechniques.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: SolveWithHumanTechniques
     path: Logic/HumanTechniques.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: Sudoku/Logic/HumanTechniques.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: CheckPossibleNumbersInCurrentIndex
     path: Logic/HumanTechniques.cs

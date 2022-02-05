@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/MainBoardIO.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: MainBoardIO
     path: Input_and_Output/MainBoardIO.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/MainBoardIO.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Input_and_Output/MainBoardIO.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/MainBoardIO.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputPossitiveNumber
     path: Input_and_Output/MainBoardIO.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/MainBoardIO.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: InputStringBoard
     path: Input_and_Output/MainBoardIO.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: Sudoku/Input_and_Output/MainBoardIO.cs
-      branch: master
+      branch: tests
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: OutputSudokuBoard
     path: Input_and_Output/MainBoardIO.cs
