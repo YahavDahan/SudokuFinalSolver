@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/NumberLocationException.cs
-      branch: tests
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: NumberLocationException
     path: Exceptions/NumberLocationException.cs
@@ -77,7 +77,7 @@ items:
   source:
     remote:
       path: Sudoku/Exceptions/NumberLocationException.cs
-      branch: tests
+      branch: master
       repo: https://github.com/YahavDahan/SudokuFinalSolver.git
     id: .ctor
     path: Exceptions/NumberLocationException.cs

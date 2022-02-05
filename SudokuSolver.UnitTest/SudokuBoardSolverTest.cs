@@ -173,15 +173,15 @@ namespace SudokuSolver.UnitTest
         private void CheckIfCanSolveBoard(Board boardToCheck)
         {
             // Act - try to solve the board
-            bool boardSolution = Sudoku.Logic.SudokuBoardSolver.Solver(boardToCheck);
+            bool isTheBoardSave = Sudoku.Logic.SudokuBoardSolver.Solver(boardToCheck);
 
             // Assert if the board is unsolvable
-            Assert.IsTrue(boardSolution);
+            Assert.IsTrue(isTheBoardSave);
 
             // Assert if the board result is incorrect (throws exception if cannot create board with the result)
             try
             {
-                Board testBoard = new Board(boardSolution.ToString());
+                Board testBoard = new Board(boardToCheck.ToString());
             }
             catch
             {
